@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Savvy | Savvy Ceramic Coating</title>
+  <meta name="description" content="Get in touch with Savvy — 0490 699 614. Ask about ceramic coating quotes, detailer network, or anything else."/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500;600&family=Barlow+Condensed:wght@600;700&display=swap" rel="stylesheet">
+  <style>
+    :root { --orange: #FF6037; --dark: #351E1C; --garnet: #733635; --mist: #ECECDC; --aqua: #A0C9CB; }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'DM Sans', sans-serif; background: #1a0e0e; color: var(--mist); min-height: 100vh; }
+    nav { position: fixed; top: 0; width: 100%; z-index: 100; display: flex; align-items: center; justify-content: space-between; padding: 18px 5%; background: rgba(26,14,14,0.95); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(255,96,55,0.15); }
+    .nav-logo { font-family: 'Bebas Neue', sans-serif; font-size: 2rem; color: var(--orange); letter-spacing: 2px; text-decoration: none; }
+    .nav-logo span { color: var(--mist); }
+    .nav-links { display: flex; gap: 28px; list-style: none; }
+    .nav-links a { color: rgba(236,236,220,0.7); text-decoration: none; font-size: 0.85rem; font-weight: 500; letter-spacing: 1px; text-transform: uppercase; transition: color 0.2s; }
+    .nav-links a:hover { color: var(--orange); }
+    .nav-cta { background: var(--orange); color: var(--dark) !important; padding: 10px 22px; border-radius: 4px; font-weight: 600 !important; }
+
+    .contact-wrapper { min-height: 100vh; display: grid; grid-template-columns: 1fr 1fr; padding-top: 80px; }
+
+    .contact-left { background: linear-gradient(160deg, #351E1C, #1a0e0e); padding: 80px 60px; display: flex; flex-direction: column; justify-content: center; position: relative; overflow: hidden; }
+    .contact-left::before { content: ''; position: absolute; top: -100px; right: -100px; width: 400px; height: 400px; background: radial-gradient(circle, rgba(255,96,55,0.1), transparent 70%); }
+    .page-tag { font-size: 0.75rem; font-weight: 600; letter-spacing: 3px; text-transform: uppercase; color: var(--orange); margin-bottom: 16px; }
+    .page-title { font-family: 'Bebas Neue', sans-serif; font-size: clamp(3.5rem, 6vw, 6rem); line-height: 0.95; color: var(--mist); margin-bottom: 24px; }
+    .page-title .accent { color: var(--orange); }
+    .page-desc { font-size: 1rem; line-height: 1.75; color: rgba(236,236,220,0.6); max-width: 400px; margin-bottom: 48px; }
+
+    .contact-methods { display: flex; flex-direction: column; gap: 24px; }
+    .contact-method { display: flex; gap: 20px; align-items: center; padding: 24px; background: rgba(255,96,55,0.05); border: 1px solid rgba(255,96,55,0.12); border-radius: 8px; transition: all 0.2s; }
+    .contact-method:hover { border-color: rgba(255,96,55,0.3); }
+    .method-icon { width: 50px; height: 50px; background: rgba(255,96,55,0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.3rem; flex-shrink: 0; }
+    .method-label { font-size: 0.72rem; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: rgba(236,236,220,0.4); margin-bottom: 6px; }
+    .method-value { font-family: 'Bebas Neue', sans-serif; font-size: 1.8rem; color: var(--orange); letter-spacing: 2px; text-decoration: none; display: block; line-height: 1; }
+    .method-value-text { font-size: 0.95rem; color: var(--mist); font-weight: 500; }
+    .method-sub { font-size: 0.78rem; color: rgba(236,236,220,0.4); margin-top: 4px; }
+
+    .contact-right { background: #0f0808; padding: 80px 60px; display: flex; flex-direction: column; justify-content: center; }
+    .form-header { margin-bottom: 40px; }
+    .form-header h2 { font-family: 'Bebas Neue', sans-serif; font-size: 2.8rem; color: var(--mist); line-height: 1; margin-bottom: 8px; }
+    .form-header p { font-size: 0.9rem; color: rgba(236,236,220,0.45); }
+    .contact-form { display: flex; flex-direction: column; gap: 20px; }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .form-group { display: flex; flex-direction: column; gap: 8px; }
+    .form-group label { font-size: 0.78rem; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; color: rgba(236,236,220,0.5); }
+    .form-group input, .form-group select, .form-group textarea { background: rgba(255,255,255,0.04); border: 1px solid rgba(255,96,55,0.2); color: var(--mist); padding: 14px 18px; border-radius: 6px; font-family: 'DM Sans', sans-serif; font-size: 0.95rem; transition: all 0.2s; outline: none; width: 100%; }
+    .form-group input::placeholder, .form-group textarea::placeholder { color: rgba(236,236,220,0.2); }
+    .form-group input:focus, .form-group textarea:focus, .form-group select:focus { border-color: var(--orange); background: rgba(255,96,55,0.04); }
+    .form-group select option { background: #1a0e0e; }
+    .form-group textarea { resize: vertical; min-height: 120px; }
+    .submit-btn { background: var(--orange); color: var(--dark); padding: 18px 32px; border: none; border-radius: 6px; font-family: 'DM Sans', sans-serif; font-size: 1.05rem; font-weight: 700; cursor: pointer; transition: all 0.2s; display: flex; align-items: center; justify-content: center; gap: 10px; margin-top: 8px; }
+    .submit-btn:hover { background: #ff7a55; transform: translateY(-2px); }
+    .success-state { display: none; text-align: center; padding: 60px 20px; }
+    .success-icon { width: 80px; height: 80px; background: rgba(255,96,55,0.1); border: 2px solid var(--orange); border-radius: 50%; margin: 0 auto 28px; display: flex; align-items: center; justify-content: center; font-size: 2.5rem; }
+    .success-state h2 { font-family: 'Bebas Neue', sans-serif; font-size: 3rem; color: var(--mist); margin-bottom: 16px; }
+    .success-state p { color: rgba(236,236,220,0.65); line-height: 1.7; font-size: 1rem; }
+
+    @media(max-width:900px){ .contact-wrapper{grid-template-columns:1fr;} .contact-left{padding:80px 5%;} .contact-right{padding:60px 5%;} .form-row{grid-template-columns:1fr;} }
+    @media(max-width:640px){ .nav-links{display:none;} }
+  </style>
+</head>
+<body>
+<nav>
+  <a href="index.html" class="nav-logo">SAVVY<span>CERAMIC</span></a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="quote.html" class="nav-cta">Get a Free Quote</a></li>
+  </ul>
+</nav>
+
+<div class="contact-wrapper">
+  <!-- LEFT -->
+  <div class="contact-left">
+    <div class="page-tag">Reach Out</div>
+    <h1 class="page-title">LET'S<br><span class="accent">TALK.</span></h1>
+    <p class="page-desc">Whether you're looking for a ceramic coating quote, want to join our detailer network, or just have a question — get in touch with Savvy directly.</p>
+    <div class="contact-methods">
+      <div class="contact-method">
+        <div class="method-icon">📞</div>
+        <div>
+          <div class="method-label">Call Savvy Direct</div>
+          <a href="tel:0490699614" class="method-value">0490 699 614</a>
+          <div class="method-sub">Mon–Sat, 8am–6pm AEST</div>
+        </div>
+      </div>
+      <div class="contact-method">
+        <div class="method-icon">💬</div>
+        <div>
+          <div class="method-label">Text / SMS</div>
+          <a href="sms:0490699614" class="method-value">0490 699 614</a>
+          <div class="method-sub">Quick responses guaranteed</div>
+        </div>
+      </div>
+      <div class="contact-method">
+        <div class="method-icon">🛡️</div>
+        <div>
+          <div class="method-label">Get a Free Quote</div>
+          <a href="quote.html" class="method-value-text">Fill in the quote form →</a>
+          <div class="method-sub">Fastest way to get matched</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- RIGHT / FORM -->
+  <div class="contact-right">
+    <div id="contactFormArea">
+      <div class="form-header">
+        <h2>SEND A MESSAGE</h2>
+        <p>We'll reply within a few hours during business hours.</p>
+      </div>
+      <form class="contact-form" id="contactForm">
+        <div class="form-row">
+          <div class="form-group">
+            <label>Your Name *</label>
+            <input type="text" name="name" placeholder="John Smith" required />
+          </div>
+          <div class="form-group">
+            <label>Phone Number</label>
+            <input type="tel" name="phone" placeholder="04XX XXX XXX" />
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Email Address *</label>
+          <input type="email" name="email" placeholder="you@email.com" required />
+        </div>
+        <div class="form-group">
+          <label>What's this about?</label>
+          <select name="topic">
+            <option value="" disabled selected>Select a topic</option>
+            <option>I want a ceramic coating quote</option>
+            <option>I'm a detailer — join your network</option>
+            <option>General question</option>
+            <option>Something else</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Your Message *</label>
+          <textarea name="message" placeholder="Tell us what you need..." required></textarea>
+        </div>
+        <button type="submit" class="submit-btn">📨 Send Message</button>
+      </form>
+    </div>
+
+    <div class="success-state" id="successMsg">
+      <div class="success-icon">✅</div>
+      <h2>MESSAGE SENT!</h2>
+      <p>Thanks for reaching out. Savvy will be in touch with you shortly.<br><br>
+      Or call directly anytime:<br>
+      <a href="tel:0490699614" style="color:var(--orange);font-family:'Bebas Neue',sans-serif;font-size:2rem;letter-spacing:2px;">0490 699 614</a></p>
+      <a href="index.html" style="display:inline-block;margin-top:32px;background:var(--orange);color:var(--dark);padding:14px 32px;border-radius:4px;font-weight:700;text-decoration:none;">← Back to Home</a>
+    </div>
+  </div>
+</div>
+
+<script>
+  document.getElementById('contactForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    document.getElementById('contactFormArea').style.display = 'none';
+    document.getElementById('successMsg').style.display = 'block';
+  });
+</script>
+</body>
+</html>

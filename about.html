@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Savvy | Savvy Ceramic Coating</title>
+  <meta name="description" content="Meet Savvy — the trusted name connecting Australian car owners with the best local ceramic coating professionals. Call 0490 699 614."/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500;600&family=Barlow+Condensed:wght@600;700&display=swap" rel="stylesheet">
+  <style>
+    :root { --orange: #FF6037; --dark: #351E1C; --garnet: #733635; --mist: #ECECDC; --aqua: #A0C9CB; }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'DM Sans', sans-serif; background: var(--dark); color: var(--mist); overflow-x: hidden; }
+    nav { position: fixed; top: 0; width: 100%; z-index: 100; display: flex; align-items: center; justify-content: space-between; padding: 18px 5%; background: rgba(53,30,28,0.95); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(255,96,55,0.15); }
+    .nav-logo { font-family: 'Bebas Neue', sans-serif; font-size: 2rem; color: var(--orange); letter-spacing: 2px; text-decoration: none; }
+    .nav-logo span { color: var(--mist); }
+    .nav-links { display: flex; gap: 28px; list-style: none; }
+    .nav-links a { color: rgba(236,236,220,0.7); text-decoration: none; font-size: 0.85rem; font-weight: 500; letter-spacing: 1px; text-transform: uppercase; transition: color 0.2s; }
+    .nav-links a:hover { color: var(--orange); }
+    .nav-cta { background: var(--orange); color: var(--dark) !important; padding: 10px 22px; border-radius: 4px; font-weight: 600 !important; }
+
+    .page-hero { padding: 160px 5% 100px; background: linear-gradient(135deg, #1a0e0e, #351E1C); position: relative; overflow: hidden; }
+    .page-hero::before { content: ''; position: absolute; top: -150px; right: -150px; width: 500px; height: 500px; background: radial-gradient(circle, rgba(255,96,55,0.1), transparent 70%); }
+    .page-tag { font-size: 0.75rem; font-weight: 600; letter-spacing: 3px; text-transform: uppercase; color: var(--orange); margin-bottom: 16px; }
+    .page-title { font-family: 'Bebas Neue', sans-serif; font-size: clamp(4rem, 8vw, 8rem); line-height: 0.95; color: var(--mist); margin-bottom: 20px; }
+    .page-title .accent { color: var(--orange); }
+
+    .about-content { padding: 100px 5%; background: #1f1211; display: grid; grid-template-columns: 1fr 1fr; gap: 100px; align-items: center; }
+    .about-visual { background: linear-gradient(135deg, var(--garnet), #351E1C); border-radius: 12px; padding: 60px 40px; text-align: center; position: relative; overflow: hidden; }
+    .about-visual::before { content: ''; position: absolute; top: -60px; right: -60px; width: 200px; height: 200px; background: radial-gradient(circle, rgba(255,96,55,0.2), transparent 70%); }
+    .avatar-circle { width: 120px; height: 120px; border-radius: 50%; background: linear-gradient(135deg, var(--orange), var(--garnet)); margin: 0 auto 24px; display: flex; align-items: center; justify-content: center; font-family: 'Bebas Neue', sans-serif; font-size: 3rem; color: var(--mist); }
+    .about-visual h3 { font-family: 'Bebas Neue', sans-serif; font-size: 2.5rem; color: var(--mist); letter-spacing: 2px; margin-bottom: 8px; }
+    .about-visual p { color: var(--orange); font-size: 0.85rem; letter-spacing: 2px; text-transform: uppercase; font-weight: 600; margin-bottom: 32px; }
+    .contact-card { background: rgba(255,96,55,0.08); border: 1px solid rgba(255,96,55,0.2); border-radius: 8px; padding: 28px; }
+    .contact-card a { font-family: 'Bebas Neue', sans-serif; font-size: 2rem; color: var(--orange); text-decoration: none; letter-spacing: 2px; display: block; }
+    .contact-card-label { font-size: 0.75rem; color: rgba(236,236,220,0.4); letter-spacing: 2px; text-transform: uppercase; margin-bottom: 8px; }
+    .about-text h2 { font-family: 'Bebas Neue', sans-serif; font-size: clamp(2.5rem, 4vw, 4rem); color: var(--mist); line-height: 1; margin-bottom: 24px; }
+    .about-text h2 .accent { color: var(--orange); }
+    .about-text p { font-size: 0.95rem; color: rgba(236,236,220,0.7); line-height: 1.8; margin-bottom: 20px; }
+    .values-list { list-style: none; margin-top: 32px; }
+    .values-list li { padding: 16px 0; border-bottom: 1px solid rgba(255,96,55,0.1); display: flex; gap: 16px; align-items: flex-start; }
+    .val-icon { color: var(--orange); font-size: 1.2rem; flex-shrink: 0; margin-top: 2px; }
+    .val-text h4 { font-weight: 600; font-size: 0.92rem; color: var(--mist); margin-bottom: 4px; }
+    .val-text p { font-size: 0.82rem; color: rgba(236,236,220,0.5); line-height: 1.5; }
+
+    .stats-band { padding: 80px 5%; background: var(--orange); display: grid; grid-template-columns: repeat(4, 1fr); gap: 40px; text-align: center; }
+    .stat-item .num { font-family: 'Bebas Neue', sans-serif; font-size: 4rem; color: var(--dark); line-height: 1; }
+    .stat-item .lbl { font-size: 0.8rem; color: rgba(53,30,28,0.65); text-transform: uppercase; letter-spacing: 1px; margin-top: 4px; }
+
+    .cta-section { padding: 100px 5%; background: var(--dark); text-align: center; }
+    .cta-section h2 { font-family: 'Bebas Neue', sans-serif; font-size: clamp(3rem, 6vw, 5rem); color: var(--mist); line-height: 1; margin-bottom: 16px; }
+    .cta-section h2 .accent { color: var(--orange); }
+    .cta-section p { color: rgba(236,236,220,0.6); font-size: 1rem; margin-bottom: 40px; }
+    .btn-primary { background: var(--orange); color: var(--dark); padding: 18px 44px; border-radius: 4px; font-weight: 700; font-size: 1.05rem; text-decoration: none; transition: all 0.2s; display: inline-block; }
+    .btn-primary:hover { background: #ff7a55; }
+
+    footer { background: #1a0e0e; padding: 60px 5% 32px; border-top: 1px solid rgba(255,96,55,0.1); text-align: center; }
+    .footer-logo { font-family: 'Bebas Neue', sans-serif; font-size: 2.5rem; color: var(--orange); letter-spacing: 2px; margin-bottom: 16px; }
+    .footer-links { display: flex; gap: 32px; justify-content: center; margin-bottom: 16px; flex-wrap: wrap; }
+    .footer-links a { color: rgba(236,236,220,0.5); text-decoration: none; font-size: 0.85rem; }
+    .footer-links a:hover { color: var(--orange); }
+    footer p { font-size: 0.8rem; color: rgba(236,236,220,0.35); margin-top: 8px; }
+
+    @media(max-width:900px){ .about-content{grid-template-columns:1fr;} .stats-band{grid-template-columns:1fr 1fr;} }
+    @media(max-width:640px){ .nav-links{display:none;} .stats-band{grid-template-columns:1fr 1fr;} }
+  </style>
+</head>
+<body>
+<nav>
+  <a href="index.html" class="nav-logo">SAVVY<span>CERAMIC</span></a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="quote.html" class="nav-cta">Get a Free Quote</a></li>
+  </ul>
+</nav>
+
+<div class="page-hero">
+  <div class="page-tag">Who We Are</div>
+  <h1 class="page-title">ABOUT<br><span class="accent">SAVVY</span></h1>
+  <p style="font-size:1.1rem;color:rgba(236,236,220,0.65);max-width:560px;line-height:1.7;">A local Australian business built to connect car owners with the best ceramic coating professionals in their area.</p>
+</div>
+
+<section class="about-content">
+  <div class="about-visual">
+    <div class="avatar-circle">S</div>
+    <h3>SAVVY</h3>
+    <p>Founder & Lead Connector</p>
+    <div class="contact-card">
+      <div class="contact-card-label">Direct Line</div>
+      <a href="tel:0490699614">0490 699 614</a>
+    </div>
+  </div>
+  <div class="about-text">
+    <h2>BUILT BY<br>A CAR GUY,<br>FOR <span class="accent">CAR OWNERS</span></h2>
+    <p>I started Savvy Ceramic after seeing too many people get ripped off by dodgy detailers or end up with a poor-quality coating job because they didn't know who to trust.</p>
+    <p>My network connects you directly with verified, reviewed ceramic coating professionals in your area. You get fast, competitive quotes and peace of mind knowing the detailer has been vetted.</p>
+    <p>Every lead I send to a detailer is a real person looking for quality work. That means only serious, professional detailers are part of the Savvy network.</p>
+    <ul class="values-list">
+      <li>
+        <div class="val-icon">🛡️</div>
+        <div class="val-text">
+          <h4>Vetted Professionals Only</h4>
+          <p>Every detailer in our network is reviewed and verified before they receive any leads.</p>
+        </div>
+      </li>
+      <li>
+        <div class="val-icon">⚡</div>
+        <div class="val-text">
+          <h4>Fast, Honest Service</h4>
+          <p>We respond to every quote request quickly and connect you with the right local expert.</p>
+        </div>
+      </li>
+      <li>
+        <div class="val-icon">💯</div>
+        <div class="val-text">
+          <h4>Totally Free for Car Owners</h4>
+          <p>You never pay to use our service. Getting quoted through Savvy costs you nothing.</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<div class="stats-band">
+  <div class="stat-item"><div class="num">500+</div><div class="lbl">Leads Matched</div></div>
+  <div class="stat-item"><div class="num">24HR</div><div class="lbl">Avg Response Time</div></div>
+  <div class="stat-item"><div class="num">100%</div><div class="lbl">Free for Car Owners</div></div>
+  <div class="stat-item"><div class="num">AU</div><div class="lbl">Australia-Wide</div></div>
+</div>
+
+<section class="cta-section">
+  <h2>READY TO GET<br>YOUR <span class="accent">FREE QUOTE?</span></h2>
+  <p>It takes under 60 seconds. No obligation, no hidden costs.</p>
+  <a href="quote.html" class="btn-primary">Get a Free Quote Now →</a>
+</section>
+
+<footer>
+  <div class="footer-logo">SAVVY CERAMIC</div>
+  <div class="footer-links">
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="quote.html">Get a Quote</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </div>
+  <p>Call Savvy: <a href="tel:0490699614" style="color:var(--orange);">0490 699 614</a></p>
+  <p style="margin-top:8px;">© 2025 Savvy Ceramic. Australia.</p>
+</footer>
+</body>
+</html>

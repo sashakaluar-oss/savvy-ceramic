@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Get a Free Ceramic Coating Quote | Savvy Ceramic</title>
+  <meta name="description" content="Get a free ceramic coating quote from local detailers near you. Fast, free, no obligation. Call Savvy on 0490 699 614."/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500;600&family=Barlow+Condensed:wght@600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --orange: #FF6037;
+      --dark: #351E1C;
+      --garnet: #733635;
+      --mist: #ECECDC;
+      --aqua: #A0C9CB;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: #1a0e0e;
+      color: var(--mist);
+      min-height: 100vh;
+    }
+
+    nav {
+      position: fixed; top: 0; width: 100%; z-index: 100;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 18px 5%;
+      background: rgba(26,14,14,0.95);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(255,96,55,0.15);
+    }
+    .nav-logo {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 2rem; color: var(--orange); letter-spacing: 2px;
+      text-decoration: none;
+    }
+    .nav-logo span { color: var(--mist); }
+    .nav-links { display: flex; gap: 28px; list-style: none; }
+    .nav-links a {
+      color: rgba(236,236,220,0.7); text-decoration: none;
+      font-size: 0.85rem; font-weight: 500; letter-spacing: 1px;
+      text-transform: uppercase; transition: color 0.2s;
+    }
+    .nav-links a:hover { color: var(--orange); }
+
+    /* PAGE LAYOUT */
+    .page-wrapper {
+      min-height: 100vh;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      padding-top: 80px;
+    }
+
+    /* LEFT PANEL */
+    .left-panel {
+      background: linear-gradient(160deg, #351E1C 0%, #1a0e0e 100%);
+      padding: 80px 60px;
+      display: flex; flex-direction: column; justify-content: center;
+      position: relative; overflow: hidden;
+    }
+    .left-panel::before {
+      content: '';
+      position: absolute; top: -100px; right: -100px;
+      width: 400px; height: 400px;
+      background: radial-gradient(circle, rgba(255,96,55,0.12), transparent 70%);
+    }
+    .left-panel::after {
+      content: '';
+      position: absolute; bottom: -80px; left: -80px;
+      width: 300px; height: 300px;
+      background: radial-gradient(circle, rgba(160,201,203,0.07), transparent 70%);
+    }
+    .panel-tag {
+      font-size: 0.75rem; font-weight: 600; letter-spacing: 3px;
+      text-transform: uppercase; color: var(--orange); margin-bottom: 16px;
+    }
+    .panel-title {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: clamp(3rem, 5vw, 5.5rem);
+      line-height: 0.95; color: var(--mist);
+      margin-bottom: 24px;
+    }
+    .panel-title .accent { color: var(--orange); }
+    .panel-desc {
+      font-size: 1rem; line-height: 1.7;
+      color: rgba(236,236,220,0.65); margin-bottom: 48px;
+      max-width: 400px;
+    }
+    .trust-items { display: flex; flex-direction: column; gap: 20px; }
+    .trust-item { display: flex; gap: 16px; align-items: center; }
+    .trust-icon {
+      width: 44px; height: 44px; background: rgba(255,96,55,0.1);
+      border: 1px solid rgba(255,96,55,0.2); border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.1rem; flex-shrink: 0;
+    }
+    .trust-text h4 { font-size: 0.92rem; font-weight: 600; color: var(--mist); }
+    .trust-text p { font-size: 0.8rem; color: rgba(236,236,220,0.5); margin-top: 2px; }
+    .panel-phone {
+      margin-top: 48px; padding-top: 40px;
+      border-top: 1px solid rgba(255,96,55,0.15);
+    }
+    .panel-phone-label {
+      font-size: 0.75rem; letter-spacing: 2px; text-transform: uppercase;
+      color: rgba(236,236,220,0.4); margin-bottom: 8px;
+    }
+    .panel-phone a {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 2.8rem; color: var(--orange);
+      text-decoration: none; letter-spacing: 2px;
+    }
+    .panel-phone-sub { font-size: 0.82rem; color: rgba(236,236,220,0.45); margin-top: 4px; }
+
+    /* RIGHT PANEL / FORM */
+    .right-panel {
+      background: #0f0808;
+      padding: 80px 60px;
+      display: flex; flex-direction: column; justify-content: center;
+    }
+    .form-header { margin-bottom: 40px; }
+    .form-header h2 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 2.8rem; color: var(--mist); line-height: 1;
+      margin-bottom: 8px;
+    }
+    .form-header p { font-size: 0.9rem; color: rgba(236,236,220,0.5); }
+    .form-progress {
+      display: flex; gap: 8px; margin-bottom: 40px;
+    }
+    .progress-step {
+      height: 4px; border-radius: 4px; flex: 1;
+      background: rgba(255,96,55,0.15);
+    }
+    .progress-step.active { background: var(--orange); }
+
+    /* FORM STYLES */
+    .quote-form { display: flex; flex-direction: column; gap: 20px; }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .form-group { display: flex; flex-direction: column; gap: 8px; }
+    .form-group label {
+      font-size: 0.8rem; font-weight: 600;
+      letter-spacing: 1px; text-transform: uppercase;
+      color: rgba(236,236,220,0.6);
+    }
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,96,55,0.2);
+      color: var(--mist);
+      padding: 14px 18px; border-radius: 6px;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.95rem;
+      transition: all 0.2s;
+      outline: none;
+      width: 100%;
+    }
+    .form-group input::placeholder,
+    .form-group textarea::placeholder { color: rgba(236,236,220,0.25); }
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+      border-color: var(--orange);
+      background: rgba(255,96,55,0.05);
+    }
+    .form-group select option { background: #1a0e0e; }
+    .form-group textarea { resize: vertical; min-height: 90px; }
+    .form-divider {
+      display: flex; align-items: center; gap: 16px; margin: 8px 0;
+    }
+    .form-divider span {
+      font-size: 0.75rem; color: rgba(236,236,220,0.3);
+      letter-spacing: 2px; text-transform: uppercase; white-space: nowrap;
+    }
+    .form-divider::before, .form-divider::after {
+      content: ''; flex: 1; height: 1px;
+      background: rgba(255,96,55,0.1);
+    }
+    .submit-btn {
+      background: var(--orange); color: var(--dark);
+      padding: 18px 32px; border: none; border-radius: 6px;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 1.05rem; font-weight: 700;
+      cursor: pointer; letter-spacing: 0.5px;
+      transition: all 0.2s; margin-top: 8px;
+      display: flex; align-items: center; justify-content: center; gap: 10px;
+    }
+    .submit-btn:hover { background: #ff7a55; transform: translateY(-2px); }
+    .form-note {
+      font-size: 0.78rem; color: rgba(236,236,220,0.3);
+      text-align: center; margin-top: 12px; line-height: 1.5;
+    }
+    .form-note a { color: var(--orange); }
+
+    /* SUCCESS STATE */
+    .success-state {
+      display: none; text-align: center;
+      padding: 60px 20px;
+    }
+    .success-icon {
+      width: 80px; height: 80px;
+      background: rgba(255,96,55,0.1);
+      border: 2px solid var(--orange);
+      border-radius: 50%; margin: 0 auto 28px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 2.5rem;
+    }
+    .success-state h2 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 3rem; color: var(--mist); margin-bottom: 16px;
+    }
+    .success-state p { color: rgba(236,236,220,0.65); line-height: 1.7; font-size: 1rem; }
+
+    /* RESPONSIVE */
+    @media (max-width: 900px) {
+      .page-wrapper { grid-template-columns: 1fr; }
+      .left-panel { padding: 60px 5%; }
+      .right-panel { padding: 60px 5%; }
+      .form-row { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 640px) {
+      .nav-links { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-logo">SAVVY<span>CERAMIC</span></a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<div class="page-wrapper">
+  <!-- LEFT PANEL -->
+  <div class="left-panel">
+    <div class="panel-tag">Free Quote · No Obligation</div>
+    <h2 class="panel-title">GET YOUR<br><span class="accent">CERAMIC</span><br>COATING<br>QUOTE</h2>
+    <p class="panel-desc">Tell us about your vehicle and we'll match you with the best-rated local ceramic coating specialists near you.</p>
+    <div class="trust-items">
+      <div class="trust-item">
+        <div class="trust-icon">⚡</div>
+        <div class="trust-text">
+          <h4>Fast Matching</h4>
+          <p>Get matched with local pros within 24 hours</p>
+        </div>
+      </div>
+      <div class="trust-item">
+        <div class="trust-icon">🆓</div>
+        <div class="trust-text">
+          <h4>Completely Free</h4>
+          <p>No hidden costs, no obligation to book</p>
+        </div>
+      </div>
+      <div class="trust-item">
+        <div class="trust-icon">✅</div>
+        <div class="trust-text">
+          <h4>Vetted Detailers</h4>
+          <p>All detailers in our network are verified professionals</p>
+        </div>
+      </div>
+    </div>
+    <div class="panel-phone">
+      <div class="panel-phone-label">Prefer to call?</div>
+      <a href="tel:0490699614">0490 699 614</a>
+      <p class="panel-phone-sub">Speak directly with Savvy</p>
+    </div>
+  </div>
+
+  <!-- RIGHT PANEL -->
+  <div class="right-panel">
+    <div id="formArea">
+      <div class="form-header">
+        <h2>YOUR DETAILS</h2>
+        <p>Takes less than 60 seconds to complete</p>
+      </div>
+      <div class="form-progress">
+        <div class="progress-step active"></div>
+        <div class="progress-step active"></div>
+        <div class="progress-step active"></div>
+        <div class="progress-step"></div>
+      </div>
+
+      <form class="quote-form" id="quoteForm">
+        <!-- Contact Info -->
+        <div class="form-row">
+          <div class="form-group">
+            <label>Your Name *</label>
+            <input type="text" name="name" placeholder="John Smith" required />
+          </div>
+          <div class="form-group">
+            <label>Phone Number *</label>
+            <input type="tel" name="phone" placeholder="04XX XXX XXX" required />
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label>Email Address</label>
+            <input type="email" name="email" placeholder="you@email.com" />
+          </div>
+          <div class="form-group">
+            <label>Suburb *</label>
+            <input type="text" name="suburb" placeholder="e.g. Parramatta" required />
+          </div>
+        </div>
+
+        <div class="form-divider"><span>About Your Vehicle</span></div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label>Vehicle Make & Model *</label>
+            <input type="text" name="vehicle" placeholder="e.g. Toyota Camry 2021" required />
+          </div>
+          <div class="form-group">
+            <label>Vehicle Type *</label>
+            <select name="vehicle_type" required>
+              <option value="" disabled selected>Select type</option>
+              <option>Sedan</option>
+              <option>SUV / Crossover</option>
+              <option>Hatchback</option>
+              <option>Ute / Truck</option>
+              <option>Coupe / Sports</option>
+              <option>Van / People Mover</option>
+              <option>Luxury / Exotic</option>
+              <option>4WD / Offroad</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label>Vehicle Condition</label>
+            <select name="condition">
+              <option value="" disabled selected>Select condition</option>
+              <option>Brand New / Dealer</option>
+              <option>Excellent — No scratches</option>
+              <option>Good — Minor swirls</option>
+              <option>Fair — Visible scratches</option>
+              <option>Needs paint correction</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Service Needed</label>
+            <select name="service">
+              <option value="" disabled selected>Select service</option>
+              <option>Full Paint Ceramic Coating</option>
+              <option>Paint + Glass Coating</option>
+              <option>Full Package (Paint, Glass, Rims)</option>
+              <option>Paint Correction + Coating</option>
+              <option>Interior Protection</option>
+              <option>Not sure — need advice</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>When Do You Need It?</label>
+          <select name="timing">
+            <option value="" disabled selected>Select timing</option>
+            <option>ASAP — This week</option>
+            <option>Within 2 weeks</option>
+            <option>Within the month</option>
+            <option>Just getting quotes for now</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>Anything Else? (Optional)</label>
+          <textarea name="notes" placeholder="Any extra details about your vehicle, specific concerns, or questions for the detailer..."></textarea>
+        </div>
+
+        <button type="submit" class="submit-btn">
+          🛡️ Get a Ceramic Coating Quote
+        </button>
+        <p class="form-note">
+          By submitting you agree to be contacted by Savvy and matched local detailers.<br>
+          Your info is never sold. <a href="contact.html">Privacy policy</a>.
+        </p>
+      </form>
+    </div>
+
+    <!-- SUCCESS STATE -->
+    <div class="success-state" id="successState">
+      <div class="success-icon">✅</div>
+      <h2>QUOTE REQUEST<br>RECEIVED!</h2>
+      <p>Thanks! Savvy will be in touch within 24 hours to match you with the best local ceramic coating specialists near you.<br><br>
+      In the meantime, feel free to call directly:<br>
+      <a href="tel:0490699614" style="color:var(--orange);font-family:'Bebas Neue',sans-serif;font-size:2rem;letter-spacing:2px;">0490 699 614</a></p>
+      <a href="index.html" style="display:inline-block;margin-top:32px;background:var(--orange);color:var(--dark);padding:14px 32px;border-radius:4px;font-weight:700;text-decoration:none;">← Back to Home</a>
+    </div>
+  </div>
+</div>
+
+<script>
+  document.getElementById('quoteForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    document.getElementById('formArea').style.display = 'none';
+    document.getElementById('successState').style.display = 'block';
+    // In production: send form data to your backend/CRM/email here
+  });
+</script>
+
+</body>
+</html>
