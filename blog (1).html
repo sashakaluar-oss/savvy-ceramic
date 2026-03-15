@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Work & Tips | Before & After Results | Shelby Ceramic Coating Melbourne</title>
+  <meta name="description" content="Real ceramic coating results, before & after photos, tips and advice for Melbourne car owners. Shelby Ceramic Coating — Vermont, Springvale & mobile."/>
+  <link rel="canonical" href="https://shelbyceramiccoating.com.au/blog.html"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500;600&family=Barlow+Condensed:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="shared.css"/>
+  <style>
+    .page-hero { background: var(--dark); padding: 80px 5%; border-bottom: 1px solid rgba(255,255,255,0.06); }
+    .page-hero .eyebrow { color: var(--coral); }
+    .page-hero .eyebrow::before { background: var(--coral); }
+    .page-hero .section-title { color: var(--cream); }
+    .page-hero .section-desc { color: rgba(242,234,216,0.5); }
+
+    .filter-bar { background: var(--cream); padding: 0 5%; border-bottom: 2px solid var(--border); display: flex; gap: 4px; overflow-x: auto; }
+    .filter-btn { padding: 16px 22px; font-size: 0.8rem; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; border: none; background: none; cursor: pointer; color: var(--muted); border-bottom: 3px solid transparent; transition: all 0.2s; white-space: nowrap; }
+    .filter-btn:hover { color: var(--text); }
+    .filter-btn.active { color: var(--coral); border-bottom-color: var(--coral); }
+
+    .posts-section { padding: 72px 5%; }
+    .posts-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; margin-top: 0; }
+
+    .post-card { background: var(--white); border: 1px solid var(--border); overflow: hidden; transition: all 0.3s; }
+    .post-card:hover { box-shadow: 0 8px 36px rgba(0,0,0,0.1); transform: translateY(-3px); border-color: rgba(232,96,74,0.25); }
+    .post-card.hidden { display: none; }
+    .post-card.featured { grid-column: span 2; }
+
+    .post-img { position: relative; }
+    .post-img .img-ph { aspect-ratio: 16/9; }
+    .post-card.featured .post-img .img-ph { aspect-ratio: 21/9; }
+    .post-cat-tag { position: absolute; top: 14px; left: 14px; background: var(--coral); color: #fff; padding: 5px 12px; border-radius: 3px; font-size: 0.68rem; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; }
+
+    .post-body { padding: 28px; }
+    .post-meta { display: flex; gap: 12px; align-items: center; margin-bottom: 10px; }
+    .post-suburb { font-size: 0.7rem; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: var(--coral); }
+    .post-date { font-size: 0.73rem; color: var(--muted); }
+    .post-title { font-family: 'Barlow Condensed', sans-serif; font-size: 1.25rem; font-weight: 700; letter-spacing: 0.5px; color: var(--dark); line-height: 1.2; margin-bottom: 10px; }
+    .post-card.featured .post-title { font-size: 1.6rem; }
+    .post-excerpt { font-size: 0.85rem; color: var(--muted); line-height: 1.65; }
+    .post-link { display: inline-flex; align-items: center; gap: 6px; margin-top: 16px; font-size: 0.78rem; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: var(--coral); transition: gap 0.2s; }
+    .post-card:hover .post-link { gap: 10px; }
+
+    .load-more { text-align: center; margin-top: 56px; }
+    .empty-state { text-align: center; padding: 80px 20px; grid-column: 1/-1; }
+    .empty-state p { font-size: 1rem; color: var(--muted); }
+
+    @media (max-width: 1024px) { .posts-grid { grid-template-columns: 1fr 1fr; } .post-card.featured { grid-column: span 2; } }
+    @media (max-width: 640px) { .posts-grid { grid-template-columns: 1fr; } .post-card.featured { grid-column: span 1; } }
+  </style>
+</head>
+<body>
+<div class="topbar">
+  <div class="topbar-left">
+    <span>📞 <a href="tel:0490699614">0490 699 614</a></span>
+    <span>🚗 Mobile across Melbourne · Vermont &amp; Springvale</span>
+  </div>
+  <span class="response-badge">⚡ 30-Min Response</span>
+</div>
+<nav>
+  <a href="index.html" class="nav-logo"><img src="images/shelby-logo.png" alt="Shelby Ceramic Coating" height="56" width="200"/></a>
+  <ul class="nav-links">
+    <li><a href="services.html">Services</a></li>
+    <li><a href="locations.html">Locations</a></li>
+    <li><a href="guarantee.html">Our Guarantee</a></li>
+    <li><a href="blog.html" class="active">Work &amp; Tips</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="tel:0490699614" style="font-family:'Bebas Neue',sans-serif;font-size:1.15rem;letter-spacing:1px;color:var(--text);">0490 699 614</a></li>
+    <li><a href="quote.html" class="nav-cta">Book Now</a></li>
+  </ul>
+  <div class="hamburger" onclick="document.getElementById('mobileMenu').classList.toggle('open')"><span></span><span></span><span></span></div>
+</nav>
+<div id="mobileMenu" class="mobile-menu">
+  <a href="services.html">Services</a><a href="guarantee.html">Our Guarantee</a>
+  <a href="blog.html">Work &amp; Tips</a><a href="about.html">About</a>
+  <a href="quote.html" class="m-cta">Book Now →</a>
+</div>
+
+<div class="page-hero">
+  <div class="eyebrow">Real Results · Advice · Melbourne</div>
+  <h1 class="section-title" style="color:var(--cream);">OUR WORK &amp;<br><span class="coral">TIPS FOR YOU.</span></h1>
+  <p class="section-desc">Before &amp; after results, ceramic coating tips, and local guides for Melbourne car owners.</p>
+</div>
+
+<div class="filter-bar">
+  <button class="filter-btn active" data-cat="all">All Posts</button>
+  <button class="filter-btn" data-cat="before-after">Before &amp; After</button>
+  <button class="filter-btn" data-cat="tips">Tips &amp; Advice</button>
+  <button class="filter-btn" data-cat="local">Local Guides</button>
+  <button class="filter-btn" data-cat="faq">FAQs</button>
+</div>
+
+<section class="posts-section">
+  <div class="posts-grid" id="postsGrid">
+    <!-- Dynamically rendered from POSTS array below -->
+  </div>
+  <div class="load-more">
+    <button class="btn-dark" id="loadMoreBtn" style="display:none;" onclick="loadMore()">Load More Posts</button>
+  </div>
+</section>
+
+<!-- CTA -->
+<div class="cta-band">
+  <div class="cta-inner">
+    <div>
+      <h2>READY TO PROTECT<br>YOUR VEHICLE?</h2>
+      <p>Mobile across Melbourne or visit our studios in Vermont or Springvale. We respond within 30 minutes.</p>
+    </div>
+    <a href="quote.html" class="btn-white">Get a Free Quote →</a>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <div class="footer-logo"><img src="images/shelby-logo.png" alt="Shelby Ceramic Coating" width="160" height="60"/></div>
+      <p>Professional ceramic coating. Mobile across Melbourne + studios in Vermont and Springvale. Est. 2021.</p>
+      <div class="footer-loc">📍 Mobile — all Melbourne suburbs</div>
+      <div class="footer-loc">📍 Studio — Vermont VIC</div>
+      <div class="footer-loc">📍 Studio — Springvale VIC</div>
+      <div class="footer-phone"><a href="tel:0490699614">0490 699 614</a></div>
+    </div>
+    <div class="footer-col"><h4>Services</h4><ul>
+      <li><a href="services.html">Full Paint Coating</a></li>
+      <li><a href="services.html">Paint Correction</a></li>
+      <li><a href="services.html">Glass Coating</a></li>
+      <li><a href="services.html">Rim Coating</a></li>
+      <li><a href="services.html">Interior Protection</a></li>
+    </ul></div>
+    <div class="footer-col"><h4>Company</h4><ul>
+      <li><a href="about.html">About</a></li>
+      <li><a href="guarantee.html">Our Guarantee</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="quote.html">Book Now</a></li>
+    </ul></div>
+    <div class="footer-col"><h4>Legal</h4><ul>
+      <li><a href="privacy.html">Privacy Policy</a></li>
+      <li><a href="terms.html">Terms of Use</a></li>
+    </ul></div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 Shelby Ceramic Coating. ABN 29 650 058 996. Vermont &amp; Springvale VIC.</p>
+    <div class="footer-legal"><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></div>
+  </div>
+</footer>
+
+<script>
+/* ═══════════════════════════════════════════════════════════════════
+   HOW TO ADD A NEW POST:
+   1. Add a new object at the TOP of the POSTS array (newest first)
+   2. Use the template below:
+   {
+     id: 9,
+     title: "Before & After: Black SUV in Clayton",
+     date: "2025-03-15",
+     suburb: "Clayton",
+     category: "before-after",     // "before-after" | "tips" | "local" | "faq"
+     excerpt: "Short description of the post...",
+     image: "images/posts/black-suv-clayton.jpg",   // leave "" if no photo yet
+     slug: "before-after-black-suv-clayton",        // used for the URL
+     featured: false                                // true = wide card
+   },
+   3. Create the full post page: post-before-after-black-suv-clayton.html
+   4. Save and re-upload to Vercel.
+   See BLOG_GUIDE.md for full instructions.
+═══════════════════════════════════════════════════════════════════ */
+
+const POSTS = [
+  {
+    id: 8,
+    title: "Before & After: White Sedan in Springvale — Two-Stage Correction + 9H Ceramic",
+    date: "2025-03-10",
+    suburb: "Springvale",
+    category: "before-after",
+    excerpt: "A 2018 Toyota Camry came into our Springvale studio with years of automated wash damage. Two-stage paint correction removed all swirl marks, followed by a full 9H ceramic coating. The transformation was dramatic.",
+    image: "",
+    slug: "before-after-white-sedan-springvale",
+    featured: true
+  },
+  {
+    id: 7,
+    title: "How Long Does Ceramic Coating Last in Melbourne?",
+    date: "2025-03-08",
+    suburb: "Melbourne",
+    category: "tips",
+    excerpt: "Melbourne's UV, heat, and road conditions are exactly what ceramic coating is designed for. Here's what to realistically expect from a professional-grade coating in our climate.",
+    image: "",
+    slug: "how-long-ceramic-coating-lasts-melbourne",
+    featured: false
+  },
+  {
+    id: 6,
+    title: "Before & After: Black BMW in Vermont — Paint Correction + Full Package",
+    date: "2025-03-06",
+    suburb: "Vermont",
+    category: "before-after",
+    excerpt: "A dark-coloured BMW is the hardest test for paint correction — every swirl mark shows. See the full before and after from our Vermont studio, including paint, glass, and rim coating.",
+    image: "",
+    slug: "before-after-black-bmw-vermont",
+    featured: false
+  },
+  {
+    id: 5,
+    title: "Ceramic Coating vs Wax: What Actually Works Better in Melbourne",
+    date: "2025-03-04",
+    suburb: "Melbourne",
+    category: "tips",
+    excerpt: "Wax washes off. Ceramic coating chemically bonds to your paint and lasts years. Here's the honest comparison for Melbourne car owners — when each makes sense and why.",
+    image: "",
+    slug: "ceramic-coating-vs-wax-melbourne",
+    featured: false
+  },
+  {
+    id: 4,
+    title: "Before & After: Silver SUV in Glen Waverley — New Car Ceramic Coating",
+    date: "2025-03-02",
+    suburb: "Glen Waverley",
+    category: "before-after",
+    excerpt: "Best time to get ceramic coating is when the car is brand new. This 2024 RAV4 was coated at the Springvale studio within a week of delivery — protecting factory-perfect paint from day one.",
+    image: "",
+    slug: "before-after-silver-suv-glen-waverley",
+    featured: false
+  },
+  {
+    id: 3,
+    title: "Why Black Cars Need Ceramic Coating More Than Any Other Colour",
+    date: "2025-02-28",
+    suburb: "Melbourne",
+    category: "tips",
+    excerpt: "Dark paint shows every swirl mark, water spot, and imperfection. Here's why ceramic coating is especially valuable for black, dark grey, and navy vehicles — and what the process looks like.",
+    image: "",
+    slug: "ceramic-coating-black-cars-melbourne",
+    featured: false
+  },
+  {
+    id: 2,
+    title: "Mobile vs Studio Ceramic Coating: Which Is Right for You?",
+    date: "2025-02-25",
+    suburb: "Melbourne",
+    category: "faq",
+    excerpt: "We offer both mobile service across Melbourne and indoor studios in Vermont and Springvale. Here's the honest comparison — when mobile works great, and when studio application is the better choice.",
+    image: "",
+    slug: "mobile-vs-studio-ceramic-coating-melbourne",
+    featured: false
+  },
+  {
+    id: 1,
+    title: "Ceramic Coating in Melbourne: A Local's Guide for 2025",
+    date: "2025-02-22",
+    suburb: "Melbourne",
+    category: "local",
+    excerpt: "Everything Melbourne car owners need to know about ceramic coating in 2025 — pricing, what to expect, how to choose a detailer, and how Melbourne's climate affects your decision.",
+    image: "",
+    slug: "ceramic-coating-melbourne-guide-2025",
+    featured: false
+  }
+];
+
+const CATEGORY_LABELS = {
+  'before-after': 'Before &amp; After',
+  'tips': 'Tips &amp; Advice',
+  'local': 'Local Guide',
+  'faq': 'FAQ Answer'
+};
+const PAGE_SIZE = 6;
+let currentCat = 'all', shown = 0;
+
+function filteredPosts() {
+  return currentCat === 'all' ? POSTS : POSTS.filter(p => p.category === currentCat);
+}
+
+function renderPosts(reset = false) {
+  const grid = document.getElementById('postsGrid');
+  if (reset) { grid.innerHTML = ''; shown = 0; }
+  const fp = filteredPosts();
+  const batch = fp.slice(shown, shown + PAGE_SIZE);
+
+  if (batch.length === 0 && shown === 0) {
+    grid.innerHTML = '<div class="empty-state"><p>No posts in this category yet — check back soon!</p></div>';
+    document.getElementById('loadMoreBtn').style.display = 'none';
+    return;
+  }
+
+  batch.forEach((p, i) => {
+    const isFeatured = p.featured && shown === 0 && i === 0;
+    const imgContent = p.image
+      ? `<img src="${p.image}" alt="${p.title}" style="width:100%;height:100%;object-fit:cover;" loading="lazy"/>`
+      : `<div class="img-ph" style="aspect-ratio:${isFeatured ? '21/9' : '16/9'};"><div class="img-ph-icon">📸</div><div class="img-ph-label">Add image: images/posts/${p.slug}.jpg</div></div>`;
+    const d = new Date(p.date);
+    const dateStr = d.toLocaleDateString('en-AU', {day:'numeric',month:'long',year:'numeric'});
+    const card = `
+    <article class="post-card${isFeatured ? ' featured' : ''}">
+      <div class="post-img">
+        ${imgContent}
+        <span class="post-cat-tag">${CATEGORY_LABELS[p.category] || p.category}</span>
+      </div>
+      <div class="post-body">
+        <div class="post-meta">
+          <span class="post-suburb">📍 ${p.suburb}</span>
+          <span class="post-date">${dateStr}</span>
+        </div>
+        <h2 class="post-title">${p.title}</h2>
+        <p class="post-excerpt">${p.excerpt}</p>
+        <a href="post-${p.slug}.html" class="post-link">Read more →</a>
+      </div>
+    </article>`;
+    grid.insertAdjacentHTML('beforeend', card);
+  });
+  shown += batch.length;
+  document.getElementById('loadMoreBtn').style.display = shown < fp.length ? 'inline-block' : 'none';
+}
+
+function loadMore() { renderPosts(false); }
+
+document.querySelectorAll('.filter-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    currentCat = btn.dataset.cat;
+    renderPosts(true);
+  });
+});
+
+renderPosts(true);
+</script>
+</body>
+</html>
