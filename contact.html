@@ -1,168 +1,286 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Contact Savvy | Savvy Ceramic Coating</title>
-  <meta name="description" content="Get in touch with Savvy — 0490 699 614. Ask about ceramic coating quotes, detailer network, or anything else."/>
+  <title>Contact Shelby Ceramic Coating | Clayton VIC | 0490 699 614</title>
+  <meta name="description" content="Contact Shelby Ceramic Coating in Clayton VIC. Call 0490 699 614 or send a message. Ceramic coating quotes and enquiries for all City of Monash suburbs."/>
+  <link rel="canonical" href="https://shelbyceramiccoating.com.au/contact.html"/>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500;600&family=Barlow+Condensed:wght@600;700&display=swap" rel="stylesheet">
   <style>
-    :root { --orange: #FF6037; --dark: #351E1C; --garnet: #733635; --mist: #ECECDC; --aqua: #A0C9CB; }
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    body { font-family: 'DM Sans', sans-serif; background: #1a0e0e; color: var(--mist); min-height: 100vh; }
-    nav { position: fixed; top: 0; width: 100%; z-index: 100; display: flex; align-items: center; justify-content: space-between; padding: 18px 5%; background: rgba(26,14,14,0.95); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(255,96,55,0.15); }
-    .nav-logo { font-family: 'Bebas Neue', sans-serif; font-size: 2rem; color: var(--orange); letter-spacing: 2px; text-decoration: none; }
-    .nav-logo span { color: var(--mist); }
-    .nav-links { display: flex; gap: 28px; list-style: none; }
-    .nav-links a { color: rgba(236,236,220,0.7); text-decoration: none; font-size: 0.85rem; font-weight: 500; letter-spacing: 1px; text-transform: uppercase; transition: color 0.2s; }
-    .nav-links a:hover { color: var(--orange); }
-    .nav-cta { background: var(--orange); color: var(--dark) !important; padding: 10px 22px; border-radius: 4px; font-weight: 600 !important; }
+    :root{--cobra:#0F3299;--red:#C8102E;--dark:#080911;--mid:#0D0F1A;--card:#141622;--mist:#EDEAE0;--border:rgba(15,50,153,0.22);}
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+    body{font-family:'DM Sans',sans-serif;background:var(--dark);color:var(--mist);min-height:100vh;}
+    a{text-decoration:none;color:inherit;}
+    nav{position:fixed;top:0;width:100%;z-index:200;display:flex;align-items:center;justify-content:space-between;padding:0 5%;height:72px;background:rgba(8,9,17,0.95);backdrop-filter:blur(16px);border-bottom:1px solid var(--border);}
+    nav::after{content:'';position:absolute;bottom:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--cobra),var(--red));}
+    .logo-wrap{display:flex;align-items:center;gap:10px;}
+    .logo-badge{width:36px;height:36px;background:var(--cobra);clip-path:polygon(50% 0%,100% 15%,100% 75%,50% 100%,0% 75%,0% 15%);display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+    .logo-badge::after{content:'S';font-family:'Bebas Neue',sans-serif;font-size:1.1rem;color:#fff;}
+    .logo-text{font-family:'Bebas Neue',sans-serif;font-size:1.4rem;letter-spacing:2px;color:var(--mist);line-height:1;}
+    .logo-text span{color:var(--red);}
+    .logo-sub{font-size:0.55rem;letter-spacing:3px;text-transform:uppercase;color:rgba(237,234,224,0.4);display:block;margin-top:1px;}
+    .nav-links{display:flex;gap:24px;list-style:none;}
+    .nav-links a{color:rgba(237,234,224,0.55);font-size:0.82rem;font-weight:500;letter-spacing:0.5px;text-transform:uppercase;transition:color 0.2s;}
+    .nav-links a:hover{color:var(--mist);}
+    .nav-cta{background:var(--red);color:#fff !important;padding:10px 22px;border-radius:2px;}
+    .hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:4px;}
+    .hamburger span{display:block;width:22px;height:2px;background:var(--mist);}
+    .mobile-menu{display:none;position:fixed;top:72px;left:0;right:0;z-index:190;background:var(--mid);flex-direction:column;padding:24px 5%;gap:16px;border-bottom:2px solid var(--cobra);}
+    .mobile-menu.open{display:flex;}
+    .mobile-menu a{font-size:0.95rem;color:var(--mist);padding:8px 0;border-bottom:1px solid var(--border);}
 
-    .contact-wrapper { min-height: 100vh; display: grid; grid-template-columns: 1fr 1fr; padding-top: 80px; }
+    .page-wrap{display:grid;grid-template-columns:1fr 1fr;min-height:100vh;padding-top:72px;}
+    .left-col{background:var(--mid);border-right:1px solid var(--border);padding:80px 60px;display:flex;flex-direction:column;justify-content:center;position:sticky;top:72px;height:calc(100vh - 72px);overflow-y:auto;}
+    .right-col{padding:80px 60px;background:var(--dark);}
 
-    .contact-left { background: linear-gradient(160deg, #351E1C, #1a0e0e); padding: 80px 60px; display: flex; flex-direction: column; justify-content: center; position: relative; overflow: hidden; }
-    .contact-left::before { content: ''; position: absolute; top: -100px; right: -100px; width: 400px; height: 400px; background: radial-gradient(circle, rgba(255,96,55,0.1), transparent 70%); }
-    .page-tag { font-size: 0.75rem; font-weight: 600; letter-spacing: 3px; text-transform: uppercase; color: var(--orange); margin-bottom: 16px; }
-    .page-title { font-family: 'Bebas Neue', sans-serif; font-size: clamp(3.5rem, 6vw, 6rem); line-height: 0.95; color: var(--mist); margin-bottom: 24px; }
-    .page-title .accent { color: var(--orange); }
-    .page-desc { font-size: 1rem; line-height: 1.75; color: rgba(236,236,220,0.6); max-width: 400px; margin-bottom: 48px; }
+    .eyebrow{font-size:0.7rem;font-weight:600;letter-spacing:4px;text-transform:uppercase;color:var(--red);display:flex;align-items:center;gap:10px;margin-bottom:20px;}
+    .eyebrow::before{content:'';width:20px;height:1px;background:var(--red);}
+    .left-title{font-family:'Bebas Neue',sans-serif;font-size:clamp(2.5rem,4.5vw,5rem);line-height:0.95;letter-spacing:-1px;color:var(--mist);margin-bottom:24px;}
+    .left-title .blue{color:var(--cobra);} .left-title .red{color:var(--red);}
+    .left-desc{font-size:0.92rem;line-height:1.75;color:rgba(237,234,224,0.5);max-width:360px;margin-bottom:44px;}
 
-    .contact-methods { display: flex; flex-direction: column; gap: 24px; }
-    .contact-method { display: flex; gap: 20px; align-items: center; padding: 24px; background: rgba(255,96,55,0.05); border: 1px solid rgba(255,96,55,0.12); border-radius: 8px; transition: all 0.2s; }
-    .contact-method:hover { border-color: rgba(255,96,55,0.3); }
-    .method-icon { width: 50px; height: 50px; background: rgba(255,96,55,0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.3rem; flex-shrink: 0; }
-    .method-label { font-size: 0.72rem; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: rgba(236,236,220,0.4); margin-bottom: 6px; }
-    .method-value { font-family: 'Bebas Neue', sans-serif; font-size: 1.8rem; color: var(--orange); letter-spacing: 2px; text-decoration: none; display: block; line-height: 1; }
-    .method-value-text { font-size: 0.95rem; color: var(--mist); font-weight: 500; }
-    .method-sub { font-size: 0.78rem; color: rgba(236,236,220,0.4); margin-top: 4px; }
+    .methods{display:flex;flex-direction:column;}
+    .method{display:grid;grid-template-columns:44px 1fr;gap:16px;align-items:center;padding:22px 0;border-bottom:1px solid var(--border);}
+    .method:first-child{border-top:1px solid var(--border);}
+    .method-icon{width:44px;height:44px;background:rgba(15,50,153,0.08);border:1px solid var(--border);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1rem;}
+    .method-label{font-size:0.62rem;letter-spacing:3px;text-transform:uppercase;color:rgba(237,234,224,0.3);margin-bottom:4px;}
+    .method-val{font-family:'Bebas Neue',sans-serif;font-size:1.3rem;letter-spacing:1.5px;line-height:1;}
+    .method-val a{color:var(--cobra);}
+    .method-sub{font-size:0.75rem;color:rgba(237,234,224,0.3);margin-top:2px;}
 
-    .contact-right { background: #0f0808; padding: 80px 60px; display: flex; flex-direction: column; justify-content: center; }
-    .form-header { margin-bottom: 40px; }
-    .form-header h2 { font-family: 'Bebas Neue', sans-serif; font-size: 2.8rem; color: var(--mist); line-height: 1; margin-bottom: 8px; }
-    .form-header p { font-size: 0.9rem; color: rgba(236,236,220,0.45); }
-    .contact-form { display: flex; flex-direction: column; gap: 20px; }
-    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
-    .form-group { display: flex; flex-direction: column; gap: 8px; }
-    .form-group label { font-size: 0.78rem; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; color: rgba(236,236,220,0.5); }
-    .form-group input, .form-group select, .form-group textarea { background: rgba(255,255,255,0.04); border: 1px solid rgba(255,96,55,0.2); color: var(--mist); padding: 14px 18px; border-radius: 6px; font-family: 'DM Sans', sans-serif; font-size: 0.95rem; transition: all 0.2s; outline: none; width: 100%; }
-    .form-group input::placeholder, .form-group textarea::placeholder { color: rgba(236,236,220,0.2); }
-    .form-group input:focus, .form-group textarea:focus, .form-group select:focus { border-color: var(--orange); background: rgba(255,96,55,0.04); }
-    .form-group select option { background: #1a0e0e; }
-    .form-group textarea { resize: vertical; min-height: 120px; }
-    .submit-btn { background: var(--orange); color: var(--dark); padding: 18px 32px; border: none; border-radius: 6px; font-family: 'DM Sans', sans-serif; font-size: 1.05rem; font-weight: 700; cursor: pointer; transition: all 0.2s; display: flex; align-items: center; justify-content: center; gap: 10px; margin-top: 8px; }
-    .submit-btn:hover { background: #ff7a55; transform: translateY(-2px); }
-    .success-state { display: none; text-align: center; padding: 60px 20px; }
-    .success-icon { width: 80px; height: 80px; background: rgba(255,96,55,0.1); border: 2px solid var(--orange); border-radius: 50%; margin: 0 auto 28px; display: flex; align-items: center; justify-content: center; font-size: 2.5rem; }
-    .success-state h2 { font-family: 'Bebas Neue', sans-serif; font-size: 3rem; color: var(--mist); margin-bottom: 16px; }
-    .success-state p { color: rgba(236,236,220,0.65); line-height: 1.7; font-size: 1rem; }
+    /* FORM */
+    .form-head{margin-bottom:40px;}
+    .form-title{font-family:'Bebas Neue',sans-serif;font-size:2rem;color:var(--mist);line-height:1;margin-bottom:8px;}
+    .form-sub{font-size:0.88rem;color:rgba(237,234,224,0.4);}
+    .contact-form{display:flex;flex-direction:column;gap:20px;}
+    .form-row{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+    .form-group{display:flex;flex-direction:column;gap:8px;}
+    .form-group label{font-size:0.72rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:rgba(237,234,224,0.4);}
+    .form-group input,.form-group select,.form-group textarea{background:rgba(255,255,255,0.03);border:1px solid rgba(15,50,153,0.2);color:var(--mist);padding:14px 18px;border-radius:2px;font-family:'DM Sans',sans-serif;font-size:0.95rem;transition:border-color 0.2s,background 0.2s;outline:none;width:100%;}
+    .form-group input::placeholder,.form-group textarea::placeholder{color:rgba(237,234,224,0.2);}
+    .form-group input:focus,.form-group select:focus,.form-group textarea:focus{border-color:var(--cobra);background:rgba(15,50,153,0.05);}
+    .form-group select option{background:#0D0F1A;}
+    .form-group textarea{resize:vertical;min-height:120px;}
+    .captcha-group{background:rgba(15,50,153,0.05);border:1px solid var(--border);padding:16px 18px;border-radius:2px;}
+    .captcha-label{font-size:0.78rem;font-weight:600;color:rgba(237,234,224,0.55);margin-bottom:8px;display:block;}
+    .captcha-q{font-size:1.05rem;font-weight:700;color:var(--mist);margin-bottom:10px;}
+    .captcha-q span{color:var(--cobra);}
+    .captcha-group input{max-width:100px;}
+    .error-msg{background:rgba(200,16,46,0.1);border:1px solid rgba(200,16,46,0.3);color:#ff6b7a;padding:12px 16px;border-radius:2px;font-size:0.85rem;display:none;}
+    .submit-btn{background:var(--red);color:#fff;padding:18px 28px;border:none;border-radius:2px;font-family:'DM Sans',sans-serif;font-size:1rem;font-weight:700;cursor:pointer;transition:opacity 0.2s;display:flex;align-items:center;justify-content:center;gap:10px;margin-top:4px;}
+    .submit-btn:hover{opacity:0.85;} .submit-btn:disabled{opacity:0.5;cursor:not-allowed;}
+    .success-wrap{display:none;text-align:center;padding:60px 0;}
+    .success-icon{width:72px;height:72px;background:rgba(15,50,153,0.1);border:1px solid var(--cobra);border-radius:50%;margin:0 auto 28px;display:flex;align-items:center;justify-content:center;font-size:2rem;}
+    .success-wrap h2{font-family:'Bebas Neue',sans-serif;font-size:2.5rem;color:var(--mist);line-height:1;margin-bottom:16px;}
+    .success-wrap p{font-size:0.92rem;color:rgba(237,234,224,0.55);line-height:1.75;}
+    .back-link{display:inline-block;margin-top:28px;background:var(--cobra);color:#fff;padding:14px 32px;border-radius:2px;font-weight:700;font-size:0.9rem;}
 
-    @media(max-width:900px){ .contact-wrapper{grid-template-columns:1fr;} .contact-left{padding:80px 5%;} .contact-right{padding:60px 5%;} .form-row{grid-template-columns:1fr;} }
-    @media(max-width:640px){ .nav-links{display:none;} }
+    footer{padding:32px 5%;border-top:1px solid var(--border);background:var(--mid);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px;}
+    footer p{font-size:0.72rem;color:rgba(237,234,224,0.25);}
+    .footer-links{display:flex;gap:18px;}
+    .footer-links a{font-size:0.72rem;color:rgba(237,234,224,0.35);transition:color 0.2s;}
+    .footer-links a:hover{color:var(--mist);}
+
+    @media(max-width:900px){.page-wrap{grid-template-columns:1fr;}.left-col{position:static;height:auto;padding:60px 5%;}.right-col{padding:60px 5%;}.form-row{grid-template-columns:1fr;}}
+    @media(max-width:640px){.nav-links{display:none;}.hamburger{display:flex;}}
   </style>
 </head>
 <body>
 <nav>
-  <a href="index.html" class="nav-logo">SAVVY<span>CERAMIC</span></a>
+  <a href="index.html" class="logo-wrap"><div class="logo-badge"></div><div><div class="logo-text">SHELBY <span>CERAMIC</span></div><span class="logo-sub">Coating · Clayton VIC</span></div></a>
   <ul class="nav-links">
-    <li><a href="index.html">Home</a></li>
     <li><a href="services.html">Services</a></li>
+    <li><a href="ceramic-coating-clayton.html">Clayton</a></li>
     <li><a href="about.html">About</a></li>
     <li><a href="contact.html">Contact</a></li>
-    <li><a href="quote.html" class="nav-cta">Get a Free Quote</a></li>
+    <li><a href="quote.html" class="nav-cta">Free Quote</a></li>
   </ul>
+  <div class="hamburger" onclick="document.getElementById('mobileMenu').classList.toggle('open')"><span></span><span></span><span></span></div>
 </nav>
+<div id="mobileMenu" class="mobile-menu">
+  <a href="index.html">Home</a><a href="services.html">Services</a>
+  <a href="about.html">About</a><a href="contact.html">Contact</a>
+  <a href="quote.html" style="background:var(--red);color:#fff;padding:10px 16px;font-weight:700;text-align:center;border-radius:2px;">Free Quote →</a>
+</div>
 
-<div class="contact-wrapper">
+<div class="page-wrap">
   <!-- LEFT -->
-  <div class="contact-left">
-    <div class="page-tag">Reach Out</div>
-    <h1 class="page-title">LET'S<br><span class="accent">TALK.</span></h1>
-    <p class="page-desc">Whether you're looking for a ceramic coating quote, want to join our detailer network, or just have a question — get in touch with Savvy directly.</p>
-    <div class="contact-methods">
-      <div class="contact-method">
+  <div class="left-col">
+    <div class="eyebrow">Clayton VIC · City of Monash</div>
+    <h1 class="left-title">LET'S<br><span class="blue">TALK</span><br><span class="red">CERAMIC.</span></h1>
+    <p class="left-desc">Whether you're after a ceramic coating quote, want to join our detailer network, or have a question — reach out to Shelby directly.</p>
+    <div class="methods">
+      <div class="method">
         <div class="method-icon">📞</div>
-        <div>
-          <div class="method-label">Call Savvy Direct</div>
-          <a href="tel:0490699614" class="method-value">0490 699 614</a>
-          <div class="method-sub">Mon–Sat, 8am–6pm AEST</div>
-        </div>
+        <div><div class="method-label">Call Shelby Direct</div><div class="method-val"><a href="tel:0490699614">0490 699 614</a></div><div class="method-sub">Mon–Sat, 8am–6pm AEST</div></div>
       </div>
-      <div class="contact-method">
+      <div class="method">
         <div class="method-icon">💬</div>
-        <div>
-          <div class="method-label">Text / SMS</div>
-          <a href="sms:0490699614" class="method-value">0490 699 614</a>
-          <div class="method-sub">Quick responses guaranteed</div>
-        </div>
+        <div><div class="method-label">Text / SMS</div><div class="method-val"><a href="sms:0490699614">0490 699 614</a></div><div class="method-sub">Fast responses guaranteed</div></div>
       </div>
-      <div class="contact-method">
+      <div class="method">
+        <div class="method-icon">📍</div>
+        <div><div class="method-label">Based In</div><div class="method-val" style="font-size:1rem;font-weight:600;color:var(--mist);letter-spacing:0;">Clayton VIC 3168</div><div class="method-sub">Serving all City of Monash suburbs</div></div>
+      </div>
+      <div class="method">
         <div class="method-icon">🛡️</div>
-        <div>
-          <div class="method-label">Get a Free Quote</div>
-          <a href="quote.html" class="method-value-text">Fill in the quote form →</a>
-          <div class="method-sub">Fastest way to get matched</div>
-        </div>
+        <div><div class="method-label">Get a Quote</div><div class="method-val" style="font-size:0.9rem;font-weight:600;letter-spacing:0;"><a href="quote.html" style="color:var(--mist);">Submit the quote form →</a></div><div class="method-sub">Fastest way to get matched</div></div>
       </div>
     </div>
   </div>
 
   <!-- RIGHT / FORM -->
-  <div class="contact-right">
-    <div id="contactFormArea">
-      <div class="form-header">
-        <h2>SEND A MESSAGE</h2>
-        <p>We'll reply within a few hours during business hours.</p>
+  <div class="right-col">
+    <div id="formWrap">
+      <div class="form-head">
+        <div class="form-title">SEND A MESSAGE.</div>
+        <div class="form-sub">We reply within a few hours during business hours. All fields marked * required.</div>
       </div>
-      <form class="contact-form" id="contactForm">
+
+      <div class="error-msg" id="errorMsg"></div>
+
+      <form class="contact-form" id="contactForm" novalidate>
         <div class="form-row">
-          <div class="form-group">
-            <label>Your Name *</label>
-            <input type="text" name="name" placeholder="John Smith" required />
-          </div>
-          <div class="form-group">
-            <label>Phone Number</label>
-            <input type="tel" name="phone" placeholder="04XX XXX XXX" />
-          </div>
+          <div class="form-group"><label>Your Name *</label><input type="text" name="name" placeholder="John Smith" required autocomplete="name"/></div>
+          <div class="form-group"><label>Phone Number</label><input type="tel" name="phone" placeholder="04XX XXX XXX" autocomplete="tel"/></div>
         </div>
-        <div class="form-group">
-          <label>Email Address *</label>
-          <input type="email" name="email" placeholder="you@email.com" required />
-        </div>
-        <div class="form-group">
-          <label>What's this about?</label>
+        <div class="form-group"><label>Email Address *</label><input type="email" name="email" placeholder="your@email.com" required autocomplete="email"/></div>
+        <div class="form-group"><label>What's this about?</label>
           <select name="topic">
             <option value="" disabled selected>Select a topic</option>
             <option>I want a ceramic coating quote</option>
             <option>I'm a detailer — join your network</option>
-            <option>General question</option>
+            <option>Question about ceramic coating</option>
             <option>Something else</option>
           </select>
         </div>
-        <div class="form-group">
-          <label>Your Message *</label>
-          <textarea name="message" placeholder="Tell us what you need..." required></textarea>
+        <div class="form-group"><label>Your Message *</label>
+          <textarea name="message" placeholder="Tell us what you need. Suburb, vehicle, and any specific questions are helpful..." required></textarea>
         </div>
-        <button type="submit" class="submit-btn">📨 Send Message</button>
+
+        <!-- SPAM PROTECTION -->
+        <!-- 1. Honeypot — invisible to humans -->
+        <input type="text" name="_gotcha" style="display:none;position:absolute;left:-9999px;" tabindex="-1" autocomplete="off"/>
+        <!-- 2. Math captcha -->
+        <div class="captcha-group">
+          <span class="captcha-label">🤖 Spam check — please solve:</span>
+          <div class="captcha-q">What is <span id="n1">?</span> + <span id="n2">?</span> = ?</div>
+          <input type="number" id="captchaInput" placeholder="Answer" min="0" max="18" required/>
+        </div>
+
+        <input type="hidden" name="_subject" id="contactSubject"/>
+        <button type="submit" class="submit-btn" id="contactBtn">📨 Send Message</button>
       </form>
     </div>
 
-    <div class="success-state" id="successMsg">
+    <div class="success-wrap" id="successWrap">
       <div class="success-icon">✅</div>
-      <h2>MESSAGE SENT!</h2>
-      <p>Thanks for reaching out. Savvy will be in touch with you shortly.<br><br>
-      Or call directly anytime:<br>
-      <a href="tel:0490699614" style="color:var(--orange);font-family:'Bebas Neue',sans-serif;font-size:2rem;letter-spacing:2px;">0490 699 614</a></p>
-      <a href="index.html" style="display:inline-block;margin-top:32px;background:var(--orange);color:var(--dark);padding:14px 32px;border-radius:4px;font-weight:700;text-decoration:none;">← Back to Home</a>
+      <h2>MESSAGE<br>SENT!</h2>
+      <p>Thanks for reaching out. Shelby will be in touch shortly.<br><br>
+        Or call directly now:<br>
+        <a href="tel:0490699614" style="font-family:'Bebas Neue',sans-serif;font-size:1.8rem;letter-spacing:2px;color:var(--cobra);">0490 699 614</a>
+      </p>
+      <a href="index.html" class="back-link">← Back to Home</a>
     </div>
   </div>
 </div>
 
+<footer>
+  <p>© 2025 Shelby Ceramic Coating. ABN 29 650 058 996. Clayton VIC 3168.</p>
+  <div class="footer-links">
+    <a href="index.html">Home</a><a href="services.html">Services</a>
+    <a href="quote.html">Get a Quote</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a>
+  </div>
+</footer>
+
 <script>
-  document.getElementById('contactForm').addEventListener('submit', function(e) {
+  // ═══════════════════════════════════════════════════════════
+  // REPLACE THESE TWO IDs WITH YOUR ACTUAL VALUES:
+  // 1. formspree.io → create form → set notification email to savvyceramiccoating@gmail.com
+  // 2. Google Apps Script URL (see GOOGLE_SHEETS_SCRIPT.gs)
+  // ═══════════════════════════════════════════════════════════
+  const FORMSPREE_CONTACT_ID = 'https://formspree.io/f/xnjgbnar';
+  const GOOGLE_SCRIPT_URL    = 'https://script.google.com/macros/s/AKfycbyju4q_xdyU76CebI63nCBP84wzkoFR5JOhBh-i37laKjpjdv9xLy4Wk0C03wEKHUtyPA/exec';
+
+  // Math captcha
+  let correctAnswer;
+  function genCaptcha() {
+    const a = Math.floor(Math.random() * 8) + 1;
+    const b = Math.floor(Math.random() * 8) + 1;
+    correctAnswer = a + b;
+    document.getElementById('n1').textContent = a;
+    document.getElementById('n2').textContent = b;
+    document.getElementById('captchaInput').value = '';
+  }
+  genCaptcha();
+
+  function isRateLimited() {
+    try { const last = localStorage.getItem('scc_contact_submit'); return last && (Date.now()-parseInt(last)) < 90000; } catch(e){ return false; }
+  }
+  function setRateLimit() { try { localStorage.setItem('scc_contact_submit', Date.now().toString()); } catch(e){} }
+
+  function showError(msg) {
+    const el = document.getElementById('errorMsg');
+    el.textContent = msg; el.style.display = 'block';
+    el.scrollIntoView({behavior:'smooth',block:'center'});
+  }
+  function hideError() { document.getElementById('errorMsg').style.display = 'none'; }
+
+  document.getElementById('contactForm').addEventListener('submit', async function(e) {
     e.preventDefault();
-    document.getElementById('contactFormArea').style.display = 'none';
-    document.getElementById('successMsg').style.display = 'block';
+    hideError();
+
+    if (this._gotcha && this._gotcha.value) return;
+    if (isRateLimited()) { showError('Please wait a moment before submitting again.'); return; }
+
+    const userAnswer = parseInt(document.getElementById('captchaInput').value);
+    if (isNaN(userAnswer) || userAnswer !== correctAnswer) {
+      showError('Incorrect answer to the spam check. Please try again.');
+      genCaptcha(); return;
+    }
+
+    const btn = document.getElementById('contactBtn');
+    btn.innerHTML = '⏳ Sending...'; btn.disabled = true;
+
+    const formData = new FormData(this);
+    document.getElementById('contactSubject').value = '📨 Contact Message — Shelby Ceramic Coating';
+
+    const leadData = {
+      timestamp: new Date().toLocaleString('en-AU',{timeZone:'Australia/Melbourne'}),
+      name:    formData.get('name')    || '',
+      phone:   formData.get('phone')   || '',
+      email:   formData.get('email')   || '',
+      topic:   formData.get('topic')   || '',
+      message: formData.get('message') || '',
+      source: 'Contact Form — shelbyceramiccoating.com.au'
+    };
+
+    let ok = false;
+    try {
+      const r = await fetch(`https://formspree.io/f/${FORMSPREE_CONTACT_ID}`, {
+        method:'POST', body:formData, headers:{'Accept':'application/json'}
+      });
+      if (r.ok) ok = true;
+    } catch(err) { console.warn('Formspree:', err); }
+
+    try {
+      await fetch(GOOGLE_SCRIPT_URL, {
+        method:'POST', headers:{'Content-Type':'application/json'},
+        body: JSON.stringify(leadData)
+      });
+      ok = true;
+    } catch(err) { console.warn('Sheets:', err); }
+
+    if (ok) {
+      setRateLimit();
+      document.getElementById('formWrap').style.display = 'none';
+      document.getElementById('successWrap').style.display = 'block';
+    } else {
+      btn.innerHTML = '❌ Error — please call 0490 699 614';
+      btn.disabled = false; genCaptcha();
+    }
   });
 </script>
 </body>
