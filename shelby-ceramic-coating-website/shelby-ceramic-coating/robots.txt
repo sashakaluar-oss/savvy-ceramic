@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Priority pages for crawling
+Sitemap: https://shelbyceramiccoating.com.au/sitemap.xml
+
+# Disallow admin or private paths (none currently, but good practice)
+Disallow: /private/
