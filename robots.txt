@@ -1,3 +1,0 @@
-User-agent: *
-Allow: /
-Sitemap: https://shelbyceramiccoating.com.au/sitemap.xml
