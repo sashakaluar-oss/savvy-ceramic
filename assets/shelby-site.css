@@ -1,7 +1,15 @@
 /* Shared Shelby navigation and footer used across legacy and local landing pages. */
+.shelby-topline{background:#080706;color:#f0e8de;text-align:center;font:.78rem Arial,sans-serif;padding:8px 16px;letter-spacing:.035em}
+.shelby-topline a{color:inherit;text-decoration:none;font-weight:700;font-size:0}
+.shelby-topline a:after{content:"Call Savvy 0490 699 614";font-size:.78rem}
+.site-nav .brand:before,.shelby-footer .brand:before{content:"";display:block;width:152px;height:54px;background:url("/assets/shelby-logo.jpg") center/contain no-repeat}
+.site-nav .brand-mark,.shelby-footer .brand-mark{display:none!important}
+.site-nav .brand-name,.shelby-footer .brand-name{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.site-nav .nav-phone{color:#fff;text-decoration:none;font:600 .8rem/1.25 Arial,sans-serif;white-space:nowrap}
+.site-nav .nav-phone strong{display:block;color:#ff8764;font-size:.92rem}
 .shelby-topline{background:#1d1715;color:#e8dfd6;text-align:center;font:.78rem Arial,sans-serif;padding:8px 16px;letter-spacing:.035em}
 .shelby-topline a{color:inherit;font-weight:700;text-decoration:none}
-.site-nav{position:sticky;top:0;z-index:1000;background:rgba(47,29,25,.98);color:#fff;border-bottom:1px solid rgba(255,255,255,.12);box-shadow:0 5px 20px rgba(0,0,0,.12)}
+.site-nav{position:sticky;top:0;z-index:1000;background:rgba(47,29,25,.98);color:#fff;box-shadow:0 5px 20px rgba(0,0,0,.12)}
 .site-nav .nav-inner{width:min(1180px,calc(100% - 40px));height:76px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:20px}
 .site-nav .brand,.shelby-footer .brand{display:inline-flex;align-items:center;gap:10px;color:#fff;text-decoration:none;line-height:1;flex:none}
 .site-nav .brand-mark,.shelby-footer .brand-mark{width:40px;height:40px;border:2px solid #fa5a36;border-radius:50%;display:grid;place-items:center;color:#fa5a36;font-family:'Barlow Condensed',Impact,sans-serif;font-size:1.1rem;font-weight:800}
@@ -28,7 +36,7 @@
  .site-nav .nav-cta{display:none}
  .site-nav .nav-links{display:none;position:absolute;top:66px;left:0;right:0;background:#2f1d19;padding:14px 20px 20px;align-items:stretch;flex-direction:column;gap:0;border-bottom:1px solid rgba(255,255,255,.15)}
  .site-nav .nav-links.open{display:flex}
- .site-nav .nav-links a{padding:12px 5px;border-bottom:1px solid rgba(255,255,255,.1);font-size:.9rem}
+ .site-nav .nav-links a{padding:12px 5px;font-size:.9rem}
  .shelby-footer .wrap{width:calc(100% - 28px)}
  .shelby-footer .footer-grid{align-items:flex-start;flex-direction:column}
  .mobile-bar{position:fixed;z-index:1001;bottom:0;left:0;right:0;display:grid;grid-template-columns:.75fr 1.25fr;gap:8px;padding:9px 12px calc(9px + env(safe-area-inset-bottom));background:#1d1715;border-top:1px solid rgba(255,255,255,.17)}
@@ -38,3 +46,14 @@
  body{padding-bottom:62px}
 }
 @media(prefers-reduced-motion:reduce){.site-nav *{scroll-behavior:auto!important;transition:none!important}}
+
+@media(max-width:680px){.site-nav .nav-phone{display:none}.site-nav .brand:before,.shelby-footer .brand:before{width:125px;height:46px}}
+/* Keep the legacy pages aligned with the new logo and mobile service header. */
+.site-nav{border-bottom:0!important}
+.site-nav .menu-toggle{border:0!important;background:rgba(255,255,255,.1)}
+.site-nav .nav-links{border-bottom:0!important}
+.site-nav .nav-links a{border-bottom:0!important}
+.mobile-bar{border-top:0!important}
+.site-nav .brand-mark,.shelby-footer .brand-mark{display:none!important}
+.site-nav .brand:before,.shelby-footer .brand:before{background-image:url("/assets/shelby-logo.jpg");background-size:contain;background-position:center;background-repeat:no-repeat}
+.site-nav .brand-name,.shelby-footer .brand-name{position:absolute!important;width:1px!important;height:1px!important;padding:0!important;margin:-1px!important;overflow:hidden!important;clip:rect(0,0,0,0)!important;white-space:nowrap!important;border:0!important}
