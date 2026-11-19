@@ -1,4 +1,6 @@
 /* Shared Shelby navigation and footer used across legacy and local landing pages. */
+.shelby-topline{background:#1d1715;color:#e8dfd6;text-align:center;font:.78rem Arial,sans-serif;padding:8px 16px;letter-spacing:.035em}
+.shelby-topline a{color:inherit;font-weight:700;text-decoration:none}
 .site-nav{position:sticky;top:0;z-index:1000;background:rgba(47,29,25,.98);color:#fff;border-bottom:1px solid rgba(255,255,255,.12);box-shadow:0 5px 20px rgba(0,0,0,.12)}
 .site-nav .nav-inner{width:min(1180px,calc(100% - 40px));height:76px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:20px}
 .site-nav .brand,.shelby-footer .brand{display:inline-flex;align-items:center;gap:10px;color:#fff;text-decoration:none;line-height:1;flex:none}
