@@ -1,8 +1,14 @@
 {
   "version": 2,
   "routes": [
-    { "handle": "filesystem" },
-    { "src": "/(.*)", "dest": "/404.html", "status": 404 }
+    {
+      "handle": "filesystem"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/404.html",
+      "status": 404
+    }
   ],
   "headers": [
     {
@@ -17,6 +23,268 @@
           "value": "SAMEORIGIN"
         }
       ]
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/ceramic-coating-blackburn.html",
+      "destination": "/ceramic-coating-south-east-melbourne.html",
+      "permanent": true
+    },
+    {
+      "source": "/ceramic-coating-forest-hill.html",
+      "destination": "/ceramic-coating-south-east-melbourne.html",
+      "permanent": true
+    },
+    {
+      "source": "/ceramic-coating-mitcham.html",
+      "destination": "/ceramic-coating-south-east-melbourne.html",
+      "permanent": true
+    },
+    {
+      "source": "/ceramic-coating-nunawading.html",
+      "destination": "/ceramic-coating-south-east-melbourne.html",
+      "permanent": true
+    },
+    {
+      "source": "/ceramic-coating-vermont.html",
+      "destination": "/ceramic-coating-south-east-melbourne.html",
+      "permanent": true
+    },
+    {
+      "source": "/is-tesla-paint-protection-worth-it-bentleigh.html",
+      "destination": "/journal/is-coating-worth-it.html",
+      "permanent": true
+    },
+    {
+      "source": "/is-tesla-paint-protection-worth-it-box-hill.html",
+      "destination": "/journal/is-coating-worth-it.html",
+      "permanent": true
+    },
+    {
+      "source": "/is-tesla-paint-protection-worth-it-chadstone.html",
+      "destination": "/journal/is-coating-worth-it.html",
+      "permanent": true
+    },
+    {
+      "source": "/is-tesla-paint-protection-worth-it-cheltenham.html",
+      "destination": "/journal/is-coating-worth-it.html",
+      "permanent": true
+    },
+    {
+      "source": "/is-tesla-paint-protection-worth-it-clayton.html",
+      "destination": "/journal/is-coating-worth-it.html",
+      "permanent": true
+    },
+    {
+      "source": "/is-tesla-paint-protection-worth-it-glen-waverley.html",
+      "destination": "/journal/is-coating-worth-it.html",
+      "permanent": true
+    },
+    {
+      "source": "/is-tesla-paint-protection-worth-it-mount-waverley.html",
+      "destination": "/journal/is-coating-worth-it.html",
+      "permanent": true
+    },
+    {
+      "source": "/is-tesla-paint-protection-worth-it-mulgrave.html",
+      "destination": "/journal/is-coating-worth-it.html",
+      "permanent": true
+    },
+    {
+      "source": "/is-tesla-paint-protection-worth-it-toorak.html",
+      "destination": "/journal/is-coating-worth-it.html",
+      "permanent": true
+    },
+    {
+      "source": "/is-tesla-paint-protection-worth-it-wheelers-hill.html",
+      "destination": "/journal/is-coating-worth-it.html",
+      "permanent": true
+    },
+    {
+      "source": "/mobile-ceramic-coating-armadale.html",
+      "destination": "/index.html#quote",
+      "permanent": true
+    },
+    {
+      "source": "/mobile-ceramic-coating-balwyn.html",
+      "destination": "/index.html#quote",
+      "permanent": true
+    },
+    {
+      "source": "/mobile-ceramic-coating-beaumaris.html",
+      "destination": "/index.html#quote",
+      "permanent": true
+    },
+    {
+      "source": "/mobile-ceramic-coating-bentleigh.html",
+      "destination": "/index.html#quote",
+      "permanent": true
+    },
+    {
+      "source": "/mobile-ceramic-coating-black-rock.html",
+      "destination": "/index.html#quote",
+      "permanent": true
+    },
+    {
+      "source": "/mobile-ceramic-coating-box-hill.html",
+      "destination": "/index.html#quote",
+      "permanent": true
+    },
+    {
+      "source": "/mobile-ceramic-coating-brighton.html",
+      "destination": "/index.html#quote",
+      "permanent": true
+    },
+    {
+      "source": "/mobile-ceramic-coating-camberwell.html",
+      "destination": "/index.html#quote",
+      "permanent": true
+    },
+    {
+      "source": "/mobile-ceramic-coating-canterbury.html",
+      "destination": "/index.html#quote",
+      "permanent": true
+    },
+    {
+      "source": "/mobile-ceramic-coating-chadstone.html",
+      "destination": "/ceramic-coating-south-east-melbourne.html",
+      "permanent": true
+    },
+    {
+      "source": "/mobile-ceramic-coating-cheltenham.html",
+      "destination": "/ceramic-coating-south-east-melbourne.html",
+      "permanent": true
+    },
+    {
+      "source": "/mobile-ceramic-coating-glen-iris.html",
+      "destination": "/index.html#quote",
+      "permanent": true
+    },
+    {
+      "source": "/mobile-ceramic-coating-hampton.html",
+      "destination": "/index.html#quote",
+      "permanent": true
+    },
+    {
+      "source": "/mobile-ceramic-coating-hawthorn.html",
+      "destination": "/index.html#quote",
+      "permanent": true
+    },
+    {
+      "source": "/mobile-ceramic-coating-kew.html",
+      "destination": "/index.html#quote",
+      "permanent": true
+    },
+    {
+      "source": "/mobile-ceramic-coating-malvern.html",
+      "destination": "/index.html#quote",
+      "permanent": true
+    },
+    {
+      "source": "/mobile-ceramic-coating-mornington.html",
+      "destination": "/index.html#quote",
+      "permanent": true
+    },
+    {
+      "source": "/mobile-ceramic-coating-mount-eliza.html",
+      "destination": "/index.html#quote",
+      "permanent": true
+    },
+    {
+      "source": "/mobile-ceramic-coating-sandringham.html",
+      "destination": "/index.html#quote",
+      "permanent": true
+    },
+    {
+      "source": "/mobile-ceramic-coating-sorrento-portsea.html",
+      "destination": "/index.html#quote",
+      "permanent": true
+    },
+    {
+      "source": "/mobile-ceramic-coating-toorak.html",
+      "destination": "/index.html#quote",
+      "permanent": true
+    },
+    {
+      "source": "/mobile-interior-car-detailing-bentleigh.html",
+      "destination": "/index.html#services",
+      "permanent": true
+    },
+    {
+      "source": "/mobile-interior-car-detailing-cheltenham.html",
+      "destination": "/index.html#services",
+      "permanent": true
+    },
+    {
+      "source": "/mobile-interior-car-detailing-clayton.html",
+      "destination": "/index.html#services",
+      "permanent": true
+    },
+    {
+      "source": "/mobile-interior-car-detailing-mount-waverley.html",
+      "destination": "/index.html#services",
+      "permanent": true
+    },
+    {
+      "source": "/mobile-interior-car-detailing-mulgrave.html",
+      "destination": "/index.html#services",
+      "permanent": true
+    },
+    {
+      "source": "/mobile-new-car-paint-protection-cheltenham.html",
+      "destination": "/paint-protection-new-cars-melbourne.html",
+      "permanent": true
+    },
+    {
+      "source": "/tesla-paint-protection-cost-bentleigh.html",
+      "destination": "/ceramic-coating-melbourne-price.html",
+      "permanent": true
+    },
+    {
+      "source": "/tesla-paint-protection-cost-box-hill.html",
+      "destination": "/ceramic-coating-melbourne-price.html",
+      "permanent": true
+    },
+    {
+      "source": "/tesla-paint-protection-cost-chadstone.html",
+      "destination": "/ceramic-coating-melbourne-price.html",
+      "permanent": true
+    },
+    {
+      "source": "/tesla-paint-protection-cost-cheltenham.html",
+      "destination": "/ceramic-coating-melbourne-price.html",
+      "permanent": true
+    },
+    {
+      "source": "/tesla-paint-protection-cost-clayton.html",
+      "destination": "/ceramic-coating-melbourne-price.html",
+      "permanent": true
+    },
+    {
+      "source": "/tesla-paint-protection-cost-glen-waverley.html",
+      "destination": "/ceramic-coating-melbourne-price.html",
+      "permanent": true
+    },
+    {
+      "source": "/tesla-paint-protection-cost-mount-waverley.html",
+      "destination": "/ceramic-coating-melbourne-price.html",
+      "permanent": true
+    },
+    {
+      "source": "/tesla-paint-protection-cost-mulgrave.html",
+      "destination": "/ceramic-coating-melbourne-price.html",
+      "permanent": true
+    },
+    {
+      "source": "/tesla-paint-protection-cost-toorak.html",
+      "destination": "/ceramic-coating-melbourne-price.html",
+      "permanent": true
+    },
+    {
+      "source": "/tesla-paint-protection-cost-wheelers-hill.html",
+      "destination": "/ceramic-coating-melbourne-price.html",
+      "permanent": true
     }
   ]
 }

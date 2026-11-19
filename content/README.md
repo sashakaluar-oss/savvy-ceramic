@@ -7,3 +7,6 @@ Create a standalone suburb page only when the row contains checked, useful local
 The five review-backed pages currently use local customer feedback already displayed on Shelby's public website. Their job photos were not supplied, so each example is clearly described without implying an illustrative photo is that job.
 
 Pricing and package inclusions are stored in `service-packages.json`, checked against the public Shelby homepage on 20 November 2026. Update this source first, then sync the homepage and local pages after business confirmation. Do not use the old studio address or imply customer-facing premises.
+
+
+Google Search quality review (20 November 2026): see `google-search-policy-audit.md`. Fifty-two unverified city-swapped routes now redirect to the broader service area or relevant general service page and have been removed from the sitemap. Search Console was not connected, so indexing and manual actions remain unchecked.
