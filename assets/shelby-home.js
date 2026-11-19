@@ -67,6 +67,10 @@
     });
   };
 
+  const requestedSuburb = new URLSearchParams(window.location.search).get('suburb');
+  const suburbInput = document.getElementById('q-suburb');
+  if (requestedSuburb && suburbInput) suburbInput.value = requestedSuburb;
+
   setupForm('qform', 'https://formspree.io/f/xgonlvwy', 'qsuc');
   setupForm('cform', 'https://formspree.io/f/xnjgbnar', 'csuc');
 
