@@ -70,6 +70,24 @@
   setupForm('qform', 'https://formspree.io/f/xgonlvwy', 'qsuc');
   setupForm('cform', 'https://formspree.io/f/xnjgbnar', 'csuc');
 
+  const storySteps = [...document.querySelectorAll('[data-story-step]')];
+  const storyVisuals = [...document.querySelectorAll('[data-story-visual]')];
+  if (storySteps.length && storyVisuals.length && 'IntersectionObserver' in window) {
+    const storyObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        const index = entry.target.dataset.storyStep;
+        storySteps.forEach((step) => step.classList.toggle('is-active', step === entry.target));
+        storyVisuals.forEach((visual) => {
+          const active = visual.dataset.storyVisual === index;
+          visual.classList.toggle('is-active', active);
+          visual.setAttribute('aria-hidden', String(!active));
+        });
+      });
+    }, { rootMargin: '-38% 0px -38% 0px', threshold: 0 });
+    storySteps.forEach((step) => storyObserver.observe(step));
+  }
+
   const tiktok = document.querySelector('.tiktok-embed');
   const loadTikTok = () => {
     if (!tiktok || document.querySelector('script[data-tiktok-embed]')) return;
