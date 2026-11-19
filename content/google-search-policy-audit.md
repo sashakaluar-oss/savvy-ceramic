@@ -21,6 +21,15 @@ Reviewed 20 November 2026 against the repository preview branch, not the product
 - Changed homepage and retained local-page organization markup to `Organization` so the structured data does not suggest a public storefront address.
 - Kept the 74-suburb target list and suburb evidence register for reviewed future pages.
 
+## Further updates in this revision
+
+- Added real job photos and an eight-second silent wash clip supplied by Shelby. The media is served as optimised local assets, with photo metadata removed. Captions describe visible subjects without assigning unconfirmed suburbs, services or results.
+- Replaced the old mobile paint protection landing page’s keyword-heavy copy, unsupported job reviews and `LocalBusiness` provider markup with concise service information and `Organization` provider data.
+- Added a dedicated mobile paint correction and cut and polish page. It explains what polishing can and cannot do, uses address-specific availability language and links to the quote form.
+- Added paint correction and cut and polish to homepage service text, FAQs and internal navigation.
+- Replaced `llms.txt` references to missing or redirected URLs with links to pages present in the current site tree.
+- The supplied Google share link could not be read in the review tool. Public directory search results still show the former Vermont studio address. This does not establish what the Google Business Profile itself currently displays, so confirm the profile directly in its owner account.
+
 ## Recommendation path
 
 - Keep the Google Business Profile as one service-area business, hide the address if customers are not served there and select up to 20 accurate service areas. The website can list the full customer-facing target area, but do not create a separate Google Business Profile for each suburb.

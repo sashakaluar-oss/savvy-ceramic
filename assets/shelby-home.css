@@ -196,3 +196,17 @@ footer{background:#080706;color:#e8dfd6;padding:34px 0 28px}
 .article-car figcaption{padding:8px 0;color:#766a62;font-size:.78rem}
 @media(max-width:850px){.scrolly-visual{top:68px}.scrolly-story{padding-top:54px}.scrolly-image-note{font-size:.66rem}.vehicle-gallery{grid-template-columns:repeat(2,minmax(0,1fr))}.vehicle-gallery figure:last-child{grid-column:1/-1}.vehicle-gallery img{height:200px}}
 @media(max-width:520px){.vehicle-gallery{grid-template-columns:1fr}.vehicle-gallery img{height:240px}}
+
+/* Real customer work gallery */
+.real-work-gallery{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));grid-auto-rows:260px;gap:14px}
+.real-work-gallery figure{position:relative;margin:0;overflow:hidden;background:#211b18}
+.real-work-gallery figure:first-child{grid-column:span 2;grid-row:span 2}
+.real-work-gallery img,.real-work-gallery video{width:100%;height:100%;object-fit:cover}
+.real-work-gallery img{transition:transform .6s ease}
+.real-work-gallery figure:hover img{transform:scale(1.035)}
+.real-work-gallery figcaption{position:absolute;left:14px;right:14px;bottom:12px;color:#fff;font-size:.78rem;font-weight:700;text-shadow:0 2px 8px rgba(0,0,0,.8)}
+.real-work-gallery figure:after{content:"";position:absolute;inset:55% 0 0;background:linear-gradient(transparent,rgba(0,0,0,.45));pointer-events:none}
+.real-work-gallery .work-video:after{display:none}
+.real-work-gallery .work-video figcaption{pointer-events:none}
+@media(max-width:850px){.real-work-gallery{grid-template-columns:repeat(2,minmax(0,1fr));grid-auto-rows:230px}.real-work-gallery figure:first-child{grid-row:span 2}}
+@media(max-width:520px){.real-work-gallery{grid-auto-rows:210px;gap:10px}.real-work-gallery figure:first-child{grid-column:span 2;grid-row:span 1}}
