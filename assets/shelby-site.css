@@ -57,3 +57,18 @@
 .site-nav .brand-mark,.shelby-footer .brand-mark{display:none!important}
 .site-nav .brand:before,.shelby-footer .brand:before{background-image:url("/assets/shelby-logo.jpg");background-size:contain;background-position:center;background-repeat:no-repeat}
 .site-nav .brand-name,.shelby-footer .brand-name{position:absolute!important;width:1px!important;height:1px!important;padding:0!important;margin:-1px!important;overflow:hidden!important;clip:rect(0,0,0,0)!important;white-space:nowrap!important;border:0!important}
+
+.vehicle-trail{background:#100d0c;color:#fff;padding:64px 0}
+.vehicle-trail .wrap{max-width:1220px;margin:auto;width:calc(100% - 48px)}
+.vehicle-trail h2{font-size:clamp(2rem,4vw,3.5rem);line-height:1.05;margin:0 0 12px}
+.vehicle-trail>div>p{max-width:760px;color:#e0d7d0}
+.vehicle-trail .vehicle-cards{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px;margin-top:26px}
+.vehicle-trail figure{margin:0;background:#211b18}
+.vehicle-trail img{width:100%;height:230px;object-fit:cover;display:block}
+.vehicle-trail figcaption{padding:9px 10px;color:#fff;font-size:.82rem}
+.vehicle-trail .vehicle-disclaimer{font-size:.72rem;color:#bdb1a7}
+.vehicle-trail .vehicle-disclaimer a{color:#ff987b}
+.credit-list{padding-left:1.25rem}
+.credit-list li{margin:1rem 0}
+@media(max-width:900px){.vehicle-trail .vehicle-cards{grid-template-columns:repeat(2,minmax(0,1fr))}.vehicle-trail figure:last-child{grid-column:1/-1}}
+@media(max-width:600px){.vehicle-trail .wrap{width:calc(100% - 32px)}.vehicle-trail .vehicle-cards{grid-template-columns:1fr}.vehicle-trail figure:last-child{grid-column:auto}.vehicle-trail img{height:250px}}

@@ -88,6 +88,14 @@
     storySteps.forEach((step) => storyObserver.observe(step));
   }
 
+  const footerLinks = document.querySelector('.footer-links');
+  if (footerLinks && !footerLinks.querySelector('a[href="/image-credits.html"]')) {
+    const creditLink = document.createElement('a');
+    creditLink.href = '/image-credits.html';
+    creditLink.textContent = 'Image credits';
+    footerLinks.appendChild(creditLink);
+  }
+
   const tiktok = document.querySelector('.tiktok-embed');
   const loadTikTok = () => {
     if (!tiktok || document.querySelector('script[data-tiktok-embed]')) return;
