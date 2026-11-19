@@ -1,0 +1,74 @@
+/* Shared Shelby navigation and footer used across legacy and local landing pages. */
+.shelby-topline{background:#080706;color:#f0e8de;text-align:center;font:.78rem Arial,sans-serif;padding:8px 16px;letter-spacing:.035em}
+.shelby-topline a{color:inherit;text-decoration:none;font-weight:700;font-size:0}
+.shelby-topline a:after{content:"Call Savvy 0490 699 614";font-size:.78rem}
+.site-nav .brand:before,.shelby-footer .brand:before{content:"";display:block;width:152px;height:54px;background:url("/assets/shelby-logo.jpg") center/contain no-repeat}
+.site-nav .brand-mark,.shelby-footer .brand-mark{display:none!important}
+.site-nav .brand-name,.shelby-footer .brand-name{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.site-nav .nav-phone{color:#fff;text-decoration:none;font:600 .8rem/1.25 Arial,sans-serif;white-space:nowrap}
+.site-nav .nav-phone strong{display:block;color:#ff8764;font-size:.92rem}
+.shelby-topline{background:#1d1715;color:#e8dfd6;text-align:center;font:.78rem Arial,sans-serif;padding:8px 16px;letter-spacing:.035em}
+.shelby-topline a{color:inherit;font-weight:700;text-decoration:none}
+.site-nav{position:sticky;top:0;z-index:1000;background:rgba(47,29,25,.98);color:#fff;box-shadow:0 5px 20px rgba(0,0,0,.12)}
+.site-nav .nav-inner{width:min(1180px,calc(100% - 40px));height:76px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.site-nav .brand,.shelby-footer .brand{display:inline-flex;align-items:center;gap:10px;color:#fff;text-decoration:none;line-height:1;flex:none}
+.site-nav .brand-mark,.shelby-footer .brand-mark{width:40px;height:40px;border:2px solid #fa5a36;border-radius:50%;display:grid;place-items:center;color:#fa5a36;font-family:'Barlow Condensed',Impact,sans-serif;font-size:1.1rem;font-weight:800}
+.site-nav .brand-name,.shelby-footer .brand-name{font-family:'Barlow Condensed',Impact,sans-serif;font-size:1.42rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase}
+.site-nav .brand-name small,.shelby-footer .brand-name small{display:block;font-family:Arial,sans-serif;font-size:.55rem;letter-spacing:.22em;color:#e8cabe;margin-top:4px}
+.site-nav .nav-links{display:flex;align-items:center;gap:20px}
+.site-nav .nav-links a{color:#f6eee6;text-decoration:none;font-family:Arial,sans-serif;font-size:.85rem;font-weight:600}
+.site-nav .nav-links a:hover{color:#ff9b72}
+.site-nav .nav-cta,.shelby-footer .button{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:46px;padding:11px 19px;background:#fa5a36;border:0;border-radius:999px;color:#fff;text-decoration:none;font-family:Arial,sans-serif;font-weight:700;font-size:.88rem}
+.site-nav .nav-cta:hover,.shelby-footer .button:hover{background:#df4828}
+.site-nav .menu-toggle{display:none;background:transparent;color:#fff;border:1px solid rgba(255,255,255,.4);border-radius:9px;padding:8px 11px;font-family:Arial,sans-serif}
+.shelby-footer{background:#1d1715;color:#e8dfd6;padding:34px 0 28px}
+.shelby-footer .wrap{width:min(1180px,calc(100% - 40px));margin:0 auto}
+.shelby-footer .footer-grid{display:flex;justify-content:space-between;align-items:center;gap:24px}
+.shelby-footer .footer-links{display:flex;gap:16px;flex-wrap:wrap}
+.shelby-footer .footer-links a{font-family:Arial,sans-serif;font-size:.8rem;color:#d0c0b8;text-decoration:none}
+.shelby-footer .footer-links a:hover{color:#ff9b72}
+.shelby-footer .copyright{font-family:Arial,sans-serif;font-size:.76rem;color:#a99b94;margin:22px 0 0}
+.mobile-bar{display:none}
+@media(max-width:900px){.site-nav .nav-links{gap:12px}.site-nav .nav-links a{font-size:.77rem}}
+@media(max-width:680px){
+ .site-nav .nav-inner{width:calc(100% - 28px);height:66px}
+ .site-nav .menu-toggle{display:block}
+ .site-nav .nav-cta{display:none}
+ .site-nav .nav-links{display:none;position:absolute;top:66px;left:0;right:0;background:#2f1d19;padding:14px 20px 20px;align-items:stretch;flex-direction:column;gap:0;border-bottom:1px solid rgba(255,255,255,.15)}
+ .site-nav .nav-links.open{display:flex}
+ .site-nav .nav-links a{padding:12px 5px;font-size:.9rem}
+ .shelby-footer .wrap{width:calc(100% - 28px)}
+ .shelby-footer .footer-grid{align-items:flex-start;flex-direction:column}
+ .mobile-bar{position:fixed;z-index:1001;bottom:0;left:0;right:0;display:grid;grid-template-columns:.75fr 1.25fr;gap:8px;padding:9px 12px calc(9px + env(safe-area-inset-bottom));background:#1d1715;border-top:1px solid rgba(255,255,255,.17)}
+ .mobile-bar a{min-height:44px;display:grid;place-items:center;border-radius:999px;text-decoration:none;font-family:Arial,sans-serif;font-weight:700;font-size:.86rem}
+ .mobile-bar .call{background:#fff;color:#241b18}
+ .mobile-bar .quote{background:#fa5a36;color:#fff}
+ body{padding-bottom:62px}
+}
+@media(prefers-reduced-motion:reduce){.site-nav *{scroll-behavior:auto!important;transition:none!important}}
+
+@media(max-width:680px){.site-nav .nav-phone{display:none}.site-nav .brand:before,.shelby-footer .brand:before{width:125px;height:46px}}
+/* Keep the legacy pages aligned with the new logo and mobile service header. */
+.site-nav{border-bottom:0!important}
+.site-nav .menu-toggle{border:0!important;background:rgba(255,255,255,.1)}
+.site-nav .nav-links{border-bottom:0!important}
+.site-nav .nav-links a{border-bottom:0!important}
+.mobile-bar{border-top:0!important}
+.site-nav .brand-mark,.shelby-footer .brand-mark{display:none!important}
+.site-nav .brand:before,.shelby-footer .brand:before{background-image:url("/assets/shelby-logo.jpg");background-size:contain;background-position:center;background-repeat:no-repeat}
+.site-nav .brand-name,.shelby-footer .brand-name{position:absolute!important;width:1px!important;height:1px!important;padding:0!important;margin:-1px!important;overflow:hidden!important;clip:rect(0,0,0,0)!important;white-space:nowrap!important;border:0!important}
+
+.vehicle-trail{background:#100d0c;color:#fff;padding:64px 0}
+.vehicle-trail .wrap{max-width:1220px;margin:auto;width:calc(100% - 48px)}
+.vehicle-trail h2{font-size:clamp(2rem,4vw,3.5rem);line-height:1.05;margin:0 0 12px}
+.vehicle-trail>div>p{max-width:760px;color:#e0d7d0}
+.vehicle-trail .vehicle-cards{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px;margin-top:26px}
+.vehicle-trail figure{margin:0;background:#211b18}
+.vehicle-trail img{width:100%;height:230px;object-fit:cover;display:block}
+.vehicle-trail figcaption{padding:9px 10px;color:#fff;font-size:.82rem}
+.vehicle-trail .vehicle-disclaimer{font-size:.72rem;color:#bdb1a7}
+.vehicle-trail .vehicle-disclaimer a{color:#ff987b}
+.credit-list{padding-left:1.25rem}
+.credit-list li{margin:1rem 0}
+@media(max-width:900px){.vehicle-trail .vehicle-cards{grid-template-columns:repeat(2,minmax(0,1fr))}.vehicle-trail figure:last-child{grid-column:1/-1}}
+@media(max-width:600px){.vehicle-trail .wrap{width:calc(100% - 32px)}.vehicle-trail .vehicle-cards{grid-template-columns:1fr}.vehicle-trail figure:last-child{grid-column:auto}.vehicle-trail img{height:250px}}

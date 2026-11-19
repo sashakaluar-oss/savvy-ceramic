@@ -1,0 +1,46 @@
+{
+  "source": "https://www.shelbyceramiccoating.com.au/",
+  "source_section": "Ceramic Coating Packages, current public homepage",
+  "checked_date": "2026-11-20",
+  "note": "Starting prices vary by vehicle size and paint condition. Confirm package availability and inclusions with Savvy before publication changes.",
+  "packages": [
+    {
+      "name": "Essential",
+      "from_aud": 499,
+      "position": "For newer cars and paint in good condition",
+      "inclusions": [
+        "Full wash and decontamination",
+        "One-layer professional ceramic coating",
+        "Two-year stated durability",
+        "Hydrophobic finish",
+        "UV protection"
+      ]
+    },
+    {
+      "name": "Premium",
+      "from_aud": 899,
+      "position": "Most popular for daily drivers",
+      "inclusions": [
+        "Full wash and decontamination",
+        "Minor paint correction",
+        "Two-layer ceramic coating",
+        "Five-year stated durability",
+        "Enhanced gloss depth",
+        "Glass coating included"
+      ]
+    },
+    {
+      "name": "Ultimate",
+      "from_aud": 1499,
+      "position": "Prestige and performance vehicles",
+      "inclusions": [
+        "Multi-stage paint correction",
+        "Three-layer professional ceramic coating",
+        "Seven-year stated durability",
+        "Full exterior coverage",
+        "Wheels and trim coated",
+        "Priority scheduling"
+      ]
+    }
+  ]
+}
